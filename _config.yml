@@ -23,13 +23,13 @@ repository               : "philaretz/philaretz.github.io"
 author:
   # Biographic information
   avatar           : "Headshot.jpg"
-  name             : "Your Sidebar Name"
+  name             : "Philipp Aretz"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "QCD Theorist"
+  location         : "Cambridge, MA"
+  employer         : "MIT"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "aretz24@mit.edu" 
 
   # Academic websites
   academia         : # URL
