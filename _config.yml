@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Your Name / Site Title"
+title                    : "Front Page"
 title_separator          : "-"
 name                     : &name "Philipp Aretz"
 description              : &description "Hi, I am Philipp - a first year PhD student at MIT working on QCD to understand the very fundamentals of what everything is made of."
@@ -62,7 +62,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "www.linkedin.com/in/philipparetz" # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -120,7 +120,7 @@ staticman:
       type               : "date"
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-atom_feed:
+atom_feed:  false
   hide                   : false     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
