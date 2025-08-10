@@ -1,7 +1,7 @@
 ---
-title: "Paper Title Number 2"
+title: "Families of periodic delay orbits"
 collection: publications
-category: journals
+category: published
 permalink: /publication/Periodic
 excerpt: 'This paper provides examples of periodic solutions to a certain class of two dimensional differential delay equations. We further investigate geometric properties of the families of solutions.'
 date: 2024-11-25
