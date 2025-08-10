@@ -1,20 +1,11 @@
 ---
-title: "Teaching experience 1"
+title: "Classical Mechanics (8.01)"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+permalink: /teaching/2025-Fall-Classical
+venue: "MIT, Department of Physics"
+date: 2025-09
+location: "Cambirdge, MA"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+Grad TA for classical Mechanics (8.01) at MIT.
