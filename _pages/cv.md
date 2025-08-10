@@ -12,8 +12,23 @@ redirect_from:
 Education
 ======
 * Ph.D in Theoretical Physics, MIT, 2024-29 (expected)
-* MASt. in Mathematics, University of Cambridge, 2023-24
-* B.S. in Physics, Heidelberg University, 2020-23
+* MASt. in Mathematics (92% - Distinction Grade), University of Cambridge, 2023-24
+* B.S. in Physics, Heidelberg University (1.0), 2020-23
+
+Publications
+=====
+* A rigorous Keldysh functional integral for fermions, 2025
+* Families of periodic delay orbits, 2024
+
+
+Honours
+=====
+* Tom Frank Fellowship at MIT, 2024-25
+* Jennings Prize for academic performance in Part 3 of the mathematical trips, 2024
+* DAAD Scholarship, 2023-24
+* Wolfson College Scholarship, 2023-24
+
+
 
 <!-- Work experience
 ======
