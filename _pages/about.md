@@ -6,7 +6,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hi and welcome to my website! My name is Philipp and I am a PhD student at the Massachusetts Institute of Technology in the area of Theoretical High Energy Physics. 
+Hi and welcome to my website!
+
+ My name is Philipp and I am a PhD student at the Massachusetts Institute of Technology in the area of Theoretical High Energy Physics. 
 
 I am interested in the mathematics of how the world works. As such I am currently pursuing research in effective field theories to study the structure of the most fundamental building blocks of our world and have previously done research on dynamical systems and mathematical quantum field theory. I am currently a member of the effective field theory group at MIT, supervised by Prof. Iain Stewart. At the same time I pursue research as to how we can show and understand medium effects in heavy ion collisions at the LHC.
 
