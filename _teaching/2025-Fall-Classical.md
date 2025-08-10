@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2025-Fall-Classical
 venue: "MIT, Department of Physics"
-date: 2025-09
+date: 2025-09-01
 location: "Cambirdge, MA"
 ---
 
