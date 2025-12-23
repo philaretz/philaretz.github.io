@@ -5,7 +5,7 @@ category: preprints
 permalink: /publication/Keldysh
 excerpt: 'This paper presents a rigorous formulation of the Keldysh functional integral for fermionc system of fintie size.'
 date: 2025-08-03
-venue: 'arXiv'
+venue: ''
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://arxiv.org/abs/2508.01787'
 bibtexurl: #'http://academicpages.github.io/files/Keldysh.bib'

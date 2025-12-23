@@ -23,8 +23,8 @@ Publications
 
 Honours
 =====
-* Tom Frank Fellowship at MIT, 2024-25
-* Jennings Prize for academic performance in Part 3 of the mathematical trips, 2024
+<!-- * Tom Frank Fellowship at MIT, 2024-25 -->
+* Jennings Prize for academic performance in Part 3 of the mathematical tripos, 2024
 * DAAD Scholarship, 2023-24
 * Wolfson College Scholarship, 2023-24
 
