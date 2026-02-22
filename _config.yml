@@ -28,7 +28,7 @@ author:
   bio              : "QCD Theorist"
   location         : "Cambridge, MA"
   employer         : "MIT"
-  uri              : # URL
+  uri              : "https://philaretz.github.io"
   email            : "aretz24@mit.edu" 
 
   # Academic websites
@@ -128,6 +128,7 @@ atom_feed:
 
 
 # SEO Related
+# Add the token from Google Search Console to enable ownership verification.
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
@@ -142,13 +143,18 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_description           : "PhD student at MIT working on theoretical high-energy physics, effective field theory, and heavy-ion collisions."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : "Person"
+  name                   : "Philipp Aretz"
+  links:
+    - "https://orcid.org/0009-0002-9249-816X"
+    - "https://scholar.google.com/citations?user=0q9qzPUAAAAJ&hl=en"
+    - "https://inspirehep.net/authors/2967323"
+    - "https://github.com/philaretz"
+    - "https://www.linkedin.com/in/philipparetz"
 
 
 # Analytics

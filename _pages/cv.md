@@ -2,6 +2,7 @@
 layout: archive
 title: "CV / Resume"
 permalink: /cv/
+description: "Curriculum vitae of Philipp Aretz, including education, publications, talks, honours, teaching, and leadership activities."
 author_profile: true
 redirect_from:
   - /resume

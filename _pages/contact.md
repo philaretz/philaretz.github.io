@@ -1,6 +1,7 @@
 ---
 title: "Contact"
 permalink: /contact/
+description: "Contact details for Philipp Aretz at MIT, including email and office location."
 author_profile: true
 ---
 
