@@ -1,7 +1,6 @@
 ---
 permalink: /
 title: "About"
-description: "I am a PhD student at MIT working on theoretical high-energy physics, effective field theory, precision QCD, and heavy-ion collisions."
 author_profile: true
 redirect_from:
   - /about/
