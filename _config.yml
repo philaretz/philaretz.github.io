@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "About Me"
+title                    : "Philipp Aretz"
 title_separator          : "-"
 name                     : &name "Philipp Aretz"
-description              : &description "Hi, I am Philipp - a first year PhD student at MIT working on QCD to understand the very fundamentals of what everything is made of."
+description              : &description "PhD student at MIT working on theoretical high-energy physics, effective field theory, and heavy-ion collisions."
 url                      : https://philaretz.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "philaretz/philaretz.github.io"
@@ -35,7 +35,7 @@ author:
   academia         : # URL
   arxiv            : https://arxiv.org/search/math?searchtype=author&query=Aretz,+P # URL - Update with the correct link to your profile
   googlescholar    : https://scholar.google.com/citations?user=0q9qzPUAAAAJ&hl=en #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  inspire-hep      : # URL
+  inspire-hep      : https://inspirehep.net/authors/2967323
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0002-9249-816X"
   semantic         : # URL

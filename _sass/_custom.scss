@@ -1,0 +1,89 @@
+/* Lightweight visual refresh for core profile pages */
+
+#main .archive,
+#main .page {
+  max-width: 980px;
+}
+
+.page__title {
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+}
+
+.page__content {
+  font-size: 1.03rem;
+  line-height: 1.75;
+}
+
+.page__content h2,
+.archive h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid rgba(120, 120, 120, 0.2);
+}
+
+.page__content h3 {
+  margin-top: 1.5rem;
+}
+
+.archive__item {
+  border: 1px solid rgba(120, 120, 120, 0.2);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  margin: 0.9rem 0;
+}
+
+.archive__item-title {
+  margin-bottom: 0.35rem;
+}
+
+.archive__item-title a {
+  text-decoration: none;
+}
+
+.archive__item-title a:hover {
+  text-decoration: underline;
+}
+
+.archive__item-excerpt {
+  margin-top: 0.4rem;
+}
+
+.status-pill {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 999px;
+  padding: 0.18rem 0.5rem;
+  vertical-align: middle;
+  margin-left: 0.35rem;
+}
+
+.status-pill--ongoing {
+  border: 1px solid rgba(0, 120, 80, 0.35);
+  background: rgba(0, 120, 80, 0.12);
+}
+
+.status-pill--published {
+  border: 1px solid rgba(0, 90, 160, 0.35);
+  background: rgba(0, 90, 160, 0.12);
+}
+
+.selected-talks {
+  margin-top: 0.6rem;
+}
+
+.selected-talks li {
+  margin-bottom: 0.45rem;
+}
+
+.masthead__menu-item {
+  font-weight: 600;
+}
+
+.btn {
+  border-radius: 8px;
+}

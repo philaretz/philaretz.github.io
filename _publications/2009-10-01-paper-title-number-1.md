@@ -1,23 +1,21 @@
 ---
 title: "A rigorous Keldysh functional integral for fermions"
 collection: publications
-category: preprints
+category: published
 permalink: /publication/Keldysh
-excerpt: 'This paper presents a rigorous formulation of the Keldysh functional integral for fermionc system of fintie size.'
-date: 2025-08-03
-venue: ''
+excerpt: 'We give a mathematically precise foundation for the Keldysh formalism and show that it produces stable, controlled predictions for non-equilibrium fermionic systems.'
+date: 2026-02-14
+venue: 'Journal of Statistical Physics, 193(2), Article 28'
+authors: 'Philipp Benjamin Aretz, Manfred Salmhofer'
+doi: '10.1007/s10955-026-03583-5'
+arxiv: '2508.01787'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://arxiv.org/abs/2508.01787'
-bibtexurl: #'http://academicpages.github.io/files/Keldysh.bib'
-citation: #'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+paperurl: 'https://link.springer.com/article/10.1007/s10955-026-03583-5'
+bibtexurl: '/files/Keldysh.bib'
+citation: 'Aretz, P. B. and Salmhofer, M. (2026). "A rigorous Keldysh functional integral for fermions." Journal of Statistical Physics, 193(2), 28. https://doi.org/10.1007/s10955-026-03583-5'
 ---
-We provide a mathematically rigorous Keldysh functional integral for fermionic quantum
-field theories. We show convergence of a discrete-time Grassmann Gaussian integral representation in
-the time-continuum limit under very general hypotheses. We also prove analyticity of the effective ac-
-tion and explicit bounds for the truncated (connected) expectation values of the non-equilibrium
-system. These bounds imply clustering with a summable decay in the thermodynamic limit, provided
-these properties hold at time zero, and provided that the determinant bound δC and decay constant
-αC of the fermionic Keldysh covariance are bounded uniformly in the volume. We then give bounds
-for these constants and show that uniformity in the volume indeed holds for a general class of systems.
-Finally we show that in the setting of dissipative quantum systems, these bounds are not necessarily
-restricted to short times.
+This paper puts the Keldysh approach to non-equilibrium fermionic systems on firm mathematical
+ground. In practical terms, we prove that the functional-integral description has a well-defined
+continuum limit, and that key observables remain controlled as system size grows. We also derive
+explicit bounds that guarantee predictable decay of correlations under broad assumptions, including
+for general classes of dissipative quantum systems.

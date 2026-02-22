@@ -1,14 +1,14 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Philipp Aretz",
+    "email": "aretz24@mit.edu",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://philaretz.github.io",
+    "summary": "Currently employed at MIT. QCD Theorist",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "Cambridge, MA",
       "countryCode": "US",
       "region": ""
     },
@@ -16,46 +16,51 @@
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=0q9qzPUAAAAJ&hl=en"
       },
       {
         "network": "ORCID",
         "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0009-0002-9249-816X"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "philaretz",
+        "url": "https://github.com/philaretz"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "philipparetz",
+        "url": "https://www.linkedin.com/in/philipparetz"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "MIT",
+      "area": "Ph.D. in Theoretical Physics",
       "studyType": "",
       "startDate": "",
-      "endDate": "2018",
+      "endDate": "2024",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "University of Cambridge",
+      "area": "MASt. in Mathematics (92% - Distinction Grade)",
       "studyType": "",
       "startDate": "",
-      "endDate": "2014",
+      "endDate": "2023",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
+      "institution": "Heidelberg University (1.0)",
+      "area": "B.S. in Physics",
       "studyType": "",
       "startDate": "",
-      "endDate": "2012",
+      "endDate": "2020",
       "gpa": null,
       "courses": []
     }
@@ -66,87 +71,51 @@
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "A rigorous Keldysh functional integral for fermions",
+      "publisher": "Journal of Statistical Physics, 193(2), Article 28",
+      "releaseDate": "2026-02-14",
+      "website": "https://link.springer.com/article/10.1007/s10955-026-03583-5",
+      "summary": "This paper presents a rigorous formulation of the Keldysh functional integral for fermionic systems of finite size."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Families of periodic delay orbits",
+      "publisher": "Journal of Differential Equations, 410, 228-250",
+      "releaseDate": "2024-11-25",
+      "website": "https://www.sciencedirect.com/science/article/pii/S0022039624004431",
+      "summary": "This paper provides examples of periodic solutions to a certain class of two dimensional differential delay equations. We further investigate geometric properties of the families of solutions."
     }
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
+      "name": "Diffraction across Colliders",
+      "event": "Graduate Student Seminar",
+      "date": "2026-02-01",
+      "location": "MIT, Cambridge",
+      "description": "An expanded version of my conference talk for graduate students at MIT."
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
+      "name": "Diffraction across Colliders",
+      "event": "SCET 2026",
+      "date": "2026-03-01",
+      "location": "KIAS, Seoul",
+      "description": "Factorization of diffraction and universality across colliders."
     },
     {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "Signals of quark-enhanced heavy-ion jets with energy correlators",
+      "event": "Hard Probes 2026",
+      "date": "2026-06-01",
+      "location": "Vanderbilt University",
+      "description": "Discussion of quark-enhanced heavy-ion jet signals using energy correlator observables."
     }
   ],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
+      "course": "Classical Mechanics (8.01)",
+      "institution": "MIT, Department of Physics",
+      "date": "2025-09-01",
       "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
       "description": ""
     }
   ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "portfolio": []
 }

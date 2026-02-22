@@ -5,10 +5,14 @@ category: published
 permalink: /publication/Periodic
 excerpt: 'This paper provides examples of periodic solutions to a certain class of two dimensional differential delay equations. We further investigate geometric properties of the families of solutions.'
 date: 2024-11-25
-venue: 'Journal of Differential Equations'
+venue: 'Journal of Differential Equations, 410, 228-250'
+authors: 'Peter Albers, Philipp Aretz, Irene Seifert'
+doi: '10.1016/j.jde.2024.07.021'
+arxiv: '2304.07550'
 slidesurl: #'http://academicpages.github.io/files/slides2.pdf'
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S0022039624004431'
-citation: #'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+bibtexurl: '/files/Periodic.bib'
+citation: 'Albers, P., Aretz, P., and Seifert, I. (2024). "Families of periodic delay orbits." Journal of Differential Equations, 410, 228-250. https://doi.org/10.1016/j.jde.2024.07.021'
 ---
 
 We construct and analyze families of periodic delay orbits for a class of delay differential equations

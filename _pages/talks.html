@@ -1,16 +1,17 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks and Presentations"
 permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+I use this page for selected talks and research presentations.
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
+{% assign talks_sorted = site.talks | sort: "date" | reverse %}
+{% if talks_sorted.size > 0 %}
+  {% for post in talks_sorted %}
+    {% include archive-single-talk.html %}
+  {% endfor %}
+{% else %}
+No talks are currently listed. Please see the [Contact page](/contact/) if you would like details on recent presentations.
 {% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
