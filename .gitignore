@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Local planning/content notes
+Improvements/
+
+# Editor settings
+.vscode/
+
+# Jekyll build artifacts and caches
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Local Ruby/Bundler files
+.bundle/
+vendor/bundle/
