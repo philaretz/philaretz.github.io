@@ -129,7 +129,7 @@ atom_feed:
 
 # SEO Related
 # Add the token from Google Search Console to enable ownership verification.
-google_site_verification :
+google_site_verification : "7mHwcy2ty8MqZOPP_ThnS1ECzY-gM0JBqvQm6P_60sI"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
