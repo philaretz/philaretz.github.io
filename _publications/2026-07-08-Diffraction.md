@@ -1,7 +1,7 @@
 ---
 title: "Factorization of elastic, single, and double diffractive pp scattering"
 collection: publications
-category: preprint
+category: preprints
 permalink: /publication/Diffraction
 excerpt: ''
 date: 2026-07-08

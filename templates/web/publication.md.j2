@@ -1,7 +1,7 @@
 ---
 title: "{{ entry.title }}"
 collection: publications
-category: {{ entry.status|lower|replace(' ', '-') }}
+category: {{ "published" if entry.status == "Published" else "preprints" }}
 permalink: /publication/{{ entry.slug }}
 excerpt: '{{ (entry.abstract or "")|replace("'", "''") }}'
 date: {{ entry.date }}
