@@ -1,0 +1,60 @@
+name: Deploy Pages
+
+# Replaces the classic "Deploy from a branch" Jekyll builder. That builder
+# checks Gemfile.lock against GitHub's own internal manifest for whichever
+# github-pages gem version it currently runs — a check this repo's lockfile
+# was failing ("the github-pages gem can't satisfy your Gemfile's
+# dependencies"), independent of anything in the content itself. Building
+# with our own `bundle install` here skips that manifest check entirely:
+# ordinary Bundler dependency resolution against Gemfile.lock is all that
+# has to succeed.
+#
+# Requires Settings -> Pages -> Build and deployment -> Source = "GitHub
+# Actions" (one-time, done once in the UI — this file alone doesn't flip it).
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --destination _site
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
