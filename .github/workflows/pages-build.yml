@@ -39,9 +39,15 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
+      # jekyll-github-metadata (pulled in by the github-pages gem) calls the
+      # GitHub API during the build for repo metadata. GitHub's classic Pages
+      # builder does this with implicit privileged access; a plain `bundle
+      # exec jekyll build` under Actions does not, and fails or rate-limits
+      # without a token. The job's own auto-issued token covers it.
       - name: Build with Jekyll
         env:
           JEKYLL_ENV: production
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: bundle exec jekyll build --destination _site
 
       - uses: actions/upload-pages-artifact@v3
