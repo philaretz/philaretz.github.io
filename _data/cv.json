@@ -1,114 +1,138 @@
 {
   "basics": {
-    "name": "Philipp Aretz",
+    "name": "Philipp Benjamin Aretz",
     "email": "aretz24@mit.edu",
-    "phone": "",
     "website": "https://philaretz.github.io",
-    "summary": "Currently employed at MIT. QCD Theorist",
-    "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Cambridge, MA",
-      "countryCode": "US",
-      "region": ""
-    },
+    "summary": Effective field theory and precision QCD; factorization and resummation for collider observables; medium effects in heavy-ion collisions; mathematical structure of quantum field theory.,
+    "location": {"city": "Cambridge, MA", "countryCode": "US"},
     "profiles": [
-      {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=0q9qzPUAAAAJ&hl=en"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/0009-0002-9249-816X"
-      },
-      {
-        "network": "GitHub",
-        "username": "philaretz",
-        "url": "https://github.com/philaretz"
-      },
-      {
-        "network": "LinkedIn",
-        "username": "philipparetz",
-        "url": "https://www.linkedin.com/in/philipparetz"
-      }
+      {"network": "ORCID", "url": "https://orcid.org/0009-0002-9249-816X"},
+      {"network": "INSPIRE-HEP", "url": "https://inspirehep.net/authors/2967323"},
+      {"network": "arXiv", "url": "https://arxiv.org/a/aretz_p_1"}
     ]
   },
-  "work": [],
-  "education": [
+  "generated": "2026-08-22T17:00:00Z",
+  "sections": [
     {
-      "institution": "MIT",
-      "area": "Ph.D. in Theoretical Physics",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2024",
-      "gpa": null,
-      "courses": []
+      "title": "Education",
+      "kind": "entries",
+      "groups": [
+        {
+          "label": null,
+          "entries": [
+            {
+              "title": "MIT",
+              "date": "2024-09-01",
+              "detail": "Massachusetts Institute of Technology",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            },
+            {
+              "title": "Cambridge",
+              "date": "2023-10-01",
+              "detail": "University of Cambridge",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            },
+            {
+              "title": "Heidelberg",
+              "date": "2020-10-01",
+              "detail": "Heidelberg University",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            }
+          ]
+        }
+      ]
     },
     {
-      "institution": "University of Cambridge",
-      "area": "MASt. in Mathematics (92% - Distinction Grade)",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2023",
-      "gpa": null,
-      "courses": []
+      "title": "Publications and preprints",
+      "kind": "entries",
+      "groups": [
+        {
+          "label": "Published",
+          "entries": [
+            {
+              "title": "A rigorous Keldysh functional integral for fermions",
+              "date": "2025-08-03",
+              "detail": "J. Stat. Phys. 193 (2026) 28",
+              "authors": "P. B. Aretz, M. Salmhofer",
+              "arxiv": "2508.01787",
+              "url": "https://doi.org/10.1007/s10955-026-03583-5"
+            },
+            {
+              "title": "Families of periodic delay orbits",
+              "date": "2023-04-15",
+              "detail": "J. Differential Equations 410 (2024) 228-250",
+              "authors": "P. Albers, P. Aretz, I. Seifert",
+              "arxiv": "2304.07550",
+              "url": "https://doi.org/10.1016/j.jde.2024.07.021"
+            }
+          ]
+        },
+        {
+          "label": "Preprints",
+          "entries": [
+            {
+              "title": "Factorization of elastic, single, and double diffractive pp scattering",
+              "date": "2026-07-08",
+              "detail": "",
+              "authors": "P. B. Aretz, K. Lee, S. T. Schindler, I. W. Stewart",
+              "arxiv": "2607.07788",
+              "url": ""
+            }
+          ]
+        }
+      ]
     },
     {
-      "institution": "Heidelberg University (1.0)",
-      "area": "B.S. in Physics",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2020",
-      "gpa": null,
-      "courses": []
-    }
-  ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
-  "publications": [
-    {
-      "name": "A rigorous Keldysh functional integral for fermions",
-      "publisher": "Journal of Statistical Physics, 193(2), Article 28",
-      "releaseDate": "2026-02-14",
-      "website": "https://link.springer.com/article/10.1007/s10955-026-03583-5",
-      "summary": "This paper presents a rigorous formulation of the Keldysh functional integral for fermionic systems of finite size."
+      "title": "Contributed conference talks",
+      "kind": "entries",
+      "groups": [
+        {
+          "label": null,
+          "entries": [
+            {
+              "title": "Diffraction Across Colliders",
+              "date": "2026-03-01",
+              "detail": "SCET 2026",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            }
+          ]
+        }
+      ]
     },
     {
-      "name": "Families of periodic delay orbits",
-      "publisher": "Journal of Differential Equations, 410, 228-250",
-      "releaseDate": "2024-11-25",
-      "website": "https://www.sciencedirect.com/science/article/pii/S0022039624004431",
-      "summary": "This paper provides examples of periodic solutions to a certain class of two dimensional differential delay equations. We further investigate geometric properties of the families of solutions."
+      "title": "Awards and funding",
+      "kind": "entries",
+      "groups": [
+        {
+          "label": null,
+          "entries": [
+            {
+              "title": "Tom Frank Fellowship",
+              "date": "2024-01-01",
+              "detail": "Massachusetts Institute of Technology",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            },
+            {
+              "title": "Jennings Prize",
+              "date": "2024-01-01",
+              "detail": "University of Cambridge",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            }
+          ]
+        }
+      ]
     }
-  ],
-  "presentations": [
-    {
-      "name": "Diffraction across Colliders",
-      "event": "Graduate Student Seminar",
-      "date": "2026-02-01",
-      "location": "MIT, Cambridge",
-      "description": "An expanded version of my conference talk for graduate students at MIT."
-    },
-    {
-      "name": "Diffraction across Colliders",
-      "event": "SCET 2026",
-      "date": "2026-03-01",
-      "location": "KIAS, Seoul",
-      "description": "Factorization of diffraction and universality across colliders."
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Classical Mechanics (8.01)",
-      "institution": "MIT, Department of Physics",
-      "date": "2025-09-01",
-      "role": "Undergraduate course",
-      "description": ""
-    }
-  ],
-  "portfolio": []
+  ]
 }

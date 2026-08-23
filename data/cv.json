@@ -1,0 +1,849 @@
+{
+  "generated": "2026-08-22T17:00:00Z",
+  "source": "Notion CV databases 1-9, seeded 2026-08-22",
+  "person": {
+    "name": "Philipp Benjamin Aretz",
+    "short_name": "P. B. Aretz",
+    "surname": "Aretz",
+    "email": "aretz24@mit.edu",
+    "affiliation": "Center for Theoretical Physics, Massachusetts Institute of Technology",
+    "location": "Cambridge, MA, USA",
+    "website": "https://philaretz.github.io",
+    "orcid": "0009-0002-9249-816X",
+    "inspire_bai": "Philipp.Aretz.1",
+    "inspire_recid": 2967323
+  },
+  "publications": [
+    {
+      "key": "arXiv:2607.07788",
+      "title": "Factorization of elastic, single, and double diffractive pp scattering",
+      "slug": "Diffraction",
+      "authors": "P. B. Aretz, K. Lee, S. T. Schindler, I. W. Stewart",
+      "arxiv": "2607.07788",
+      "primary_class": "hep-ph",
+      "doi": null,
+      "journal": null,
+      "status": "Preprint",
+      "date": "2026-07-08",
+      "source": "inspire",
+      "featured": false,
+      "abstract": "",
+      "slides": null,
+      "bibtex": null,
+      "citation": "Aretz, P. B., Lee, K., Schindler, S. T. and Stewart, I. W. (2026). \"Factorization of elastic, single, and double diffractive pp scattering.\" arXiv:2607.07788 [hep-ph].",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": true
+      }
+    },
+    {
+      "key": "arXiv:2508.01787",
+      "title": "A rigorous Keldysh functional integral for fermions",
+      "slug": "Keldysh",
+      "authors": "P. B. Aretz, M. Salmhofer",
+      "arxiv": "2508.01787",
+      "primary_class": "math-ph",
+      "doi": "https://doi.org/10.1007/s10955-026-03583-5",
+      "journal": "J. Stat. Phys. 193 (2026) 28",
+      "status": "Published",
+      "date": "2025-08-03",
+      "source": "inspire",
+      "featured": false,
+      "abstract": "We give a mathematically precise foundation for the Keldysh formalism and show that it produces stable, controlled predictions for non-equilibrium fermionic systems.",
+      "slides": null,
+      "bibtex": "/files/Keldysh.bib",
+      "citation": "Aretz, P. B. and Salmhofer, M. (2026). \"A rigorous Keldysh functional integral for fermions.\" Journal of Statistical Physics, 193(2), 28. https://doi.org/10.1007/s10955-026-03583-5",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": true
+      }
+    },
+    {
+      "key": "arXiv:2304.07550",
+      "title": "Families of periodic delay orbits",
+      "slug": "Periodic",
+      "authors": "P. Albers, P. Aretz, I. Seifert",
+      "arxiv": "2304.07550",
+      "primary_class": "math",
+      "doi": "https://doi.org/10.1016/j.jde.2024.07.021",
+      "journal": "J. Differential Equations 410 (2024) 228-250",
+      "status": "Published",
+      "date": "2023-04-15",
+      "source": "manual",
+      "featured": false,
+      "abstract": "This paper provides examples of periodic solutions to a certain class of two dimensional differential delay equations. We further investigate geometric properties of the families of solutions.",
+      "slides": null,
+      "bibtex": "/files/Periodic.bib",
+      "citation": "Albers, P., Aretz, P. and Seifert, I. (2024). \"Families of periodic delay orbits.\" Journal of Differential Equations, 410, 228-250. https://doi.org/10.1016/j.jde.2024.07.021",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": true
+      }
+    }
+  ],
+  "talks": [
+    {
+      "key": "talk-scet2026",
+      "title": "Diffraction Across Colliders",
+      "slug": "diffraction-across-colliders-scet",
+      "event": "SCET 2026",
+      "kind": "Contributed talk",
+      "scope": "International",
+      "institution": "KIAS",
+      "location": "Seoul, South Korea",
+      "date": "2026-03-01",
+      "slides": null,
+      "recording": null,
+      "abstract": "Factorization of diffraction and universality across colliders.",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": true
+      }
+    },
+    {
+      "key": "talk-hp2026",
+      "title": "Signal of ...",
+      "slug": "hp2026-incomplete",
+      "event": "Hard Probes 2026",
+      "kind": "Contributed talk",
+      "scope": "International",
+      "institution": null,
+      "location": null,
+      "date": null,
+      "slides": null,
+      "recording": null,
+      "abstract": "",
+      "rank": null,
+      "flags": {
+        "cv": false,
+        "resume": false,
+        "web": false
+      }
+    },
+    {
+      "key": "talk-gss-2026-02",
+      "title": "Diffraction across Colliders",
+      "slug": "diffraction-across-colliders-mit-seminar",
+      "event": null,
+      "kind": "Contributed talk",
+      "scope": "Institutional",
+      "institution": "MIT Graduate Student Seminar",
+      "location": "Cambridge, MA, USA",
+      "date": "2026-02-01",
+      "slides": null,
+      "recording": null,
+      "abstract": "Factorization structures in diffraction and how universality can be leveraged across collider environments.",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": true
+      }
+    },
+    {
+      "key": "talk-gss-2025-11",
+      "title": "An Introduction to Diffraction",
+      "slug": "an-introduction-to-diffraction",
+      "event": null,
+      "kind": "Contributed talk",
+      "scope": "Institutional",
+      "institution": "MIT Graduate Student Seminar",
+      "location": "Cambridge, MA, USA",
+      "date": "2025-11-01",
+      "slides": null,
+      "recording": null,
+      "abstract": "",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": true
+      }
+    },
+    {
+      "key": "talk-eft-2025-10",
+      "title": "Generalised Detector Observables in the Heavy Ion Environment",
+      "slug": "generalised-detector-observables-eft-2025-10",
+      "event": null,
+      "kind": "Group meeting",
+      "scope": "Internal",
+      "institution": "MIT EFT Group Meeting",
+      "location": "Cambridge, MA, USA",
+      "date": "2025-10-01",
+      "slides": null,
+      "recording": null,
+      "abstract": "",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": false
+      }
+    },
+    {
+      "key": "talk-eft-2025-05",
+      "title": "Resurgence and Renormalons in QCD",
+      "slug": "resurgence-and-renormalons-in-qcd",
+      "event": null,
+      "kind": "Group meeting",
+      "scope": "Internal",
+      "institution": "MIT EFT Group Meeting",
+      "location": "Cambridge, MA, USA",
+      "date": "2025-05-01",
+      "slides": null,
+      "recording": null,
+      "abstract": "",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": false
+      }
+    },
+    {
+      "key": "talk-hi-2025-04",
+      "title": "Generalised Detector Observables in the Heavy Ion Environment",
+      "slug": "generalised-detector-observables-hi-2025-04",
+      "event": null,
+      "kind": "Group meeting",
+      "scope": "Internal",
+      "institution": "MIT Heavy Ions Group Meeting",
+      "location": "Cambridge, MA, USA",
+      "date": "2025-04-01",
+      "slides": null,
+      "recording": null,
+      "abstract": "",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": false
+      }
+    }
+  ],
+  "education": [
+    {
+      "key": "edu-mit",
+      "title": "MIT",
+      "institution": "Massachusetts Institute of Technology",
+      "degree": "PhD",
+      "field": "Physics",
+      "start": "2024-09-01",
+      "end": null,
+      "grade": null,
+      "thesis": null,
+      "advisor": null,
+      "location": "Cambridge, MA, USA",
+      "date": "2024-09-01",
+      "rank": 10,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": true
+      }
+    },
+    {
+      "key": "edu-cambridge",
+      "title": "Cambridge",
+      "institution": "University of Cambridge",
+      "degree": "MASt",
+      "field": "Mathematics (Part III)",
+      "start": "2023-10-01",
+      "end": "2024-06-30",
+      "grade": "Pass with Distinction, 92% — ranked 9th of 294",
+      "thesis": null,
+      "advisor": null,
+      "location": "Cambridge, UK",
+      "date": "2023-10-01",
+      "rank": 20,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": true
+      }
+    },
+    {
+      "key": "edu-heidelberg",
+      "title": "Heidelberg",
+      "institution": "Heidelberg University",
+      "degree": "BSc",
+      "field": "Physics",
+      "start": "2020-10-01",
+      "end": "2023-09-30",
+      "grade": "1.0 (best possible)",
+      "thesis": "The Keldysh Functional Integral and Bounds on Truncated Expectation Values",
+      "advisor": "Prof. Manfred Salmhofer",
+      "location": "Heidelberg, Germany",
+      "date": "2020-10-01",
+      "rank": 30,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": true
+      }
+    },
+    {
+      "key": "edu-abitur",
+      "title": "Abitur",
+      "institution": "Goethe-Schule Bochum",
+      "degree": "Abitur",
+      "field": null,
+      "start": null,
+      "end": "2020-06-30",
+      "grade": "1.0",
+      "thesis": null,
+      "advisor": null,
+      "location": "Bochum, Germany",
+      "date": "2020-06-30",
+      "rank": 40,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": false
+      }
+    }
+  ],
+  "positions": [
+    {
+      "key": "pos-trr191",
+      "title": "Research Assistant",
+      "role": "Research Assistant",
+      "organization": "Heidelberg University",
+      "group": "CRC/TRR 191 Symplectic Structures in Geometry, Algebra and Dynamics",
+      "start": "2022-04-01",
+      "end": "2023-09-30",
+      "location": "Heidelberg, Germany",
+      "description": "Differential delay equations: periodic delay orbits and smooth orbit families. Magnetic billiards: KAM-based extension near convex boundaries.",
+      "date": "2022-04-01",
+      "rank": 10,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": false
+      }
+    },
+    {
+      "key": "pos-tutor",
+      "title": "Tutor",
+      "role": "Tutor",
+      "organization": "Heidelberg University",
+      "group": null,
+      "start": "2021-10-01",
+      "end": "2022-02-28",
+      "location": "Heidelberg, Germany",
+      "description": null,
+      "date": "2021-10-01",
+      "rank": 20,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": false
+      }
+    },
+    {
+      "key": "pos-consulting",
+      "title": "Financial Consulting Intern",
+      "role": "Financial Consulting Intern",
+      "organization": "Kartak & Partner",
+      "group": null,
+      "start": "2021-04-01",
+      "end": "2021-05-31",
+      "location": "Germany",
+      "description": null,
+      "date": "2021-04-01",
+      "rank": 30,
+      "flags": {
+        "cv": false,
+        "resume": false,
+        "web": false
+      }
+    }
+  ],
+  "awards": [
+    {
+      "key": "award-tomfrank",
+      "title": "Tom Frank Fellowship",
+      "awarding_body": "Massachusetts Institute of Technology",
+      "kind": "Fellowship",
+      "year": 2024,
+      "date": "2024-01-01",
+      "rank": 10,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": true
+      }
+    },
+    {
+      "key": "award-jennings",
+      "title": "Jennings Prize",
+      "awarding_body": "University of Cambridge",
+      "kind": "Prize",
+      "year": 2024,
+      "date": "2024-01-01",
+      "rank": 20,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": true
+      }
+    },
+    {
+      "key": "award-daad",
+      "title": "DAAD Scholarship",
+      "awarding_body": "Deutscher Akademischer Austauschdienst",
+      "kind": "Scholarship",
+      "year": 2023,
+      "date": "2023-01-01",
+      "rank": 30,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": false
+      }
+    },
+    {
+      "key": "award-wolfson",
+      "title": "Wolfson College Scholarship",
+      "awarding_body": "Wolfson College, Cambridge",
+      "kind": "Scholarship",
+      "year": 2023,
+      "date": "2023-01-01",
+      "rank": 40,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": false
+      }
+    },
+    {
+      "key": "award-efellows",
+      "title": "e-fellows.net Scholarship",
+      "awarding_body": null,
+      "kind": "Scholarship",
+      "year": null,
+      "date": null,
+      "rank": 50,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": false
+      }
+    }
+  ],
+  "teaching": [],
+  "service": [
+    {
+      "key": "svc-edgerton",
+      "title": "Treasurer",
+      "role": "Treasurer",
+      "organization": "Edgerton House, MIT",
+      "start": "2025-05-01",
+      "end": "2026-05-31",
+      "description": null,
+      "date": "2025-05-01",
+      "rank": 10,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": false
+      }
+    },
+    {
+      "key": "svc-rowing",
+      "title": "President",
+      "role": "President",
+      "organization": "MIT Rowing Club",
+      "start": null,
+      "end": null,
+      "description": null,
+      "date": null,
+      "rank": 20,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": false
+      }
+    },
+    {
+      "key": "svc-fys",
+      "title": "Organiser, First Year Seminar",
+      "role": "Organiser, First Year Seminar",
+      "organization": "Massachusetts Institute of Technology",
+      "start": "2024-09-01",
+      "end": "2025-05-31",
+      "description": null,
+      "date": "2024-09-01",
+      "rank": 30,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": false
+      }
+    },
+    {
+      "key": "svc-buddy",
+      "title": "Buddy for first-year students",
+      "role": "Buddy for first-year students",
+      "organization": "Heidelberg University",
+      "start": "2021-10-01",
+      "end": "2022-09-30",
+      "description": null,
+      "date": "2021-10-01",
+      "rank": 40,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": false
+      }
+    },
+    {
+      "key": "svc-ski",
+      "title": "Ski instructor",
+      "role": "Ski instructor",
+      "organization": null,
+      "start": "2018-01-01",
+      "end": "2022-12-31",
+      "description": null,
+      "date": "2018-01-01",
+      "rank": 50,
+      "flags": {
+        "cv": false,
+        "resume": false,
+        "web": false
+      }
+    }
+  ],
+  "meetings": [
+    {
+      "key": "mtg-scet2026",
+      "title": "SCET 2026",
+      "kind": "Conference",
+      "location": "Seoul, South Korea",
+      "start": "2026-03-01",
+      "end": null,
+      "date": "2026-03-01",
+      "contribution": "Talk",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": true
+      }
+    },
+    {
+      "key": "mtg-scet2025",
+      "title": "SCET 2025",
+      "kind": "Conference",
+      "location": null,
+      "start": null,
+      "end": null,
+      "date": "2025-01-01",
+      "contribution": "Attended",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": false
+      }
+    },
+    {
+      "key": "mtg-hp2026",
+      "title": "Hard Probes 2026",
+      "kind": "Conference",
+      "location": null,
+      "start": null,
+      "end": null,
+      "date": null,
+      "contribution": "Attended",
+      "rank": null,
+      "flags": {
+        "cv": false,
+        "resume": false,
+        "web": false
+      }
+    },
+    {
+      "key": "mtg-ggi",
+      "title": "GGI School on Theory of Fundamental Interactions",
+      "kind": "School",
+      "location": "Florence, Italy",
+      "start": null,
+      "end": null,
+      "date": null,
+      "contribution": "Attended",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": false
+      }
+    },
+    {
+      "key": "mtg-tasi",
+      "title": "TASI",
+      "kind": "School",
+      "location": "Boulder, CO, USA",
+      "start": null,
+      "end": null,
+      "date": null,
+      "contribution": "Attended",
+      "rank": null,
+      "flags": {
+        "cv": false,
+        "resume": false,
+        "web": false
+      }
+    }
+  ],
+  "sections": [
+    {
+      "title": "Research interests",
+      "targets": [
+        "cv",
+        "resume"
+      ],
+      "order": 10,
+      "source": "static",
+      "filter": null,
+      "group_by": "none",
+      "sort": null,
+      "partial": null,
+      "heading_style": "section",
+      "show_if_empty": false,
+      "body": "Effective field theory and precision QCD; factorization and resummation for collider observables; medium effects in heavy-ion collisions; mathematical structure of quantum field theory."
+    },
+    {
+      "title": "Education",
+      "targets": [
+        "cv",
+        "resume",
+        "web"
+      ],
+      "order": 20,
+      "source": "education",
+      "filter": null,
+      "group_by": "none",
+      "sort": "date desc",
+      "partial": "partials/education",
+      "heading_style": "section",
+      "show_if_empty": false,
+      "body": null
+    },
+    {
+      "title": "Research positions",
+      "targets": [
+        "cv",
+        "resume"
+      ],
+      "order": 30,
+      "source": "positions",
+      "filter": null,
+      "group_by": "none",
+      "sort": "date desc",
+      "partial": "partials/position",
+      "heading_style": "section",
+      "show_if_empty": false,
+      "body": null
+    },
+    {
+      "title": "Featured publications",
+      "targets": [
+        "cv",
+        "resume",
+        "web"
+      ],
+      "order": 35,
+      "source": "publications",
+      "filter": "featured",
+      "group_by": "none",
+      "sort": "date desc",
+      "partial": "partials/publication",
+      "heading_style": "section",
+      "show_if_empty": false,
+      "body": null
+    },
+    {
+      "title": "Publications and preprints",
+      "targets": [
+        "cv",
+        "resume",
+        "web"
+      ],
+      "order": 40,
+      "source": "publications",
+      "filter": null,
+      "group_by": "status",
+      "sort": "date desc",
+      "partial": "partials/publication",
+      "heading_style": "section",
+      "show_if_empty": true,
+      "body": null
+    },
+    {
+      "title": "Invited talks and seminars",
+      "targets": [
+        "cv"
+      ],
+      "order": 50,
+      "source": "talks",
+      "filter": "kind in (\"Invited seminar\", \"Plenary\")",
+      "group_by": "none",
+      "sort": "date desc",
+      "partial": "partials/talk",
+      "heading_style": "section",
+      "show_if_empty": false,
+      "body": null
+    },
+    {
+      "title": "Departmental and institutional seminars",
+      "targets": [
+        "cv"
+      ],
+      "order": 55,
+      "source": "talks",
+      "filter": "scope == \"Institutional\"",
+      "group_by": "none",
+      "sort": "date desc",
+      "partial": "partials/talk",
+      "heading_style": "section",
+      "show_if_empty": false,
+      "body": null
+    },
+    {
+      "title": "Contributed conference talks",
+      "targets": [
+        "cv",
+        "resume",
+        "web"
+      ],
+      "order": 60,
+      "source": "talks",
+      "filter": "kind in (\"Contributed talk\", \"Poster\") and scope in (\"International\", \"National\")",
+      "group_by": "none",
+      "sort": "date desc",
+      "partial": "partials/talk",
+      "heading_style": "section",
+      "show_if_empty": false,
+      "body": null
+    },
+    {
+      "title": "Internal seminars",
+      "targets": [
+        "cv"
+      ],
+      "order": 70,
+      "source": "talks",
+      "filter": "scope == \"Internal\"",
+      "group_by": "none",
+      "sort": "date desc",
+      "partial": "partials/talk-compact",
+      "heading_style": "subsection",
+      "show_if_empty": false,
+      "body": null
+    },
+    {
+      "title": "Conferences and schools attended",
+      "targets": [
+        "cv"
+      ],
+      "order": 80,
+      "source": "meetings",
+      "filter": null,
+      "group_by": "none",
+      "sort": "date desc",
+      "partial": "partials/meeting",
+      "heading_style": "section",
+      "show_if_empty": false,
+      "body": null
+    },
+    {
+      "title": "Awards and funding",
+      "targets": [
+        "cv",
+        "resume",
+        "web"
+      ],
+      "order": 90,
+      "source": "awards",
+      "filter": null,
+      "group_by": "none",
+      "sort": "rank",
+      "partial": "partials/award",
+      "heading_style": "section",
+      "show_if_empty": false,
+      "body": null
+    },
+    {
+      "title": "Teaching",
+      "targets": [
+        "cv"
+      ],
+      "order": 100,
+      "source": "teaching",
+      "filter": null,
+      "group_by": "none",
+      "sort": "date desc",
+      "partial": "partials/teaching",
+      "heading_style": "section",
+      "show_if_empty": false,
+      "body": null
+    },
+    {
+      "title": "Service and leadership",
+      "targets": [
+        "cv",
+        "resume"
+      ],
+      "order": 110,
+      "source": "service",
+      "filter": null,
+      "group_by": "none",
+      "sort": "rank",
+      "partial": "partials/service",
+      "heading_style": "section",
+      "show_if_empty": false,
+      "body": null
+    },
+    {
+      "title": "Technical skills",
+      "targets": [
+        "cv",
+        "resume"
+      ],
+      "order": 120,
+      "source": "static",
+      "filter": null,
+      "group_by": "none",
+      "sort": null,
+      "partial": null,
+      "heading_style": "section",
+      "show_if_empty": false,
+      "body": "Python (NumPy, pandas, TensorFlow); C++ (ROOT, Pythia); Mathematica; MATLAB; LaTeX."
+    },
+    {
+      "title": "Languages",
+      "targets": [
+        "cv",
+        "resume"
+      ],
+      "order": 130,
+      "source": "static",
+      "filter": null,
+      "group_by": "none",
+      "sort": null,
+      "partial": null,
+      "heading_style": "section",
+      "show_if_empty": false,
+      "body": "German (native); English (C2, Cambridge Grade A, TOEFL 117/120); French (basic); Spanish (basic); Latin (Latinum)."
+    }
+  ]
+}

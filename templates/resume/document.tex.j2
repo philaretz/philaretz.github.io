@@ -1,0 +1,65 @@
+\documentclass[10pt,letterpaper]{article}
+
+%% One-page industry résumé. Same data as the CV, filtered on the On Résumé
+%% checkbox and the resume Target in Notion database 9. The one-page
+%% constraint is enforced by tools/check.py, not by eye — see §6.
+%%
+%% Layout inherited from Resume Citadel/citadel_physics_resume.tex.
+
+\usepackage{fontspec}
+\usepackage[margin=1.6cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{microtype}
+
+\setmainfont{TeX Gyre Heros}
+\linespread{1.0}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+\emergencystretch=1.5em
+\hyphenpenalty=1000
+
+\titleformat{\section}{\small\bfseries\scshape}{}{0pt}{}[\vspace{-0.75em}\rule{\textwidth}{0.4pt}]
+\titlespacing{\section}{0pt}{0.75em}{0.3em}
+\titleformat{\subsection}{\footnotesize\itshape}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{0.4em}{0.15em}
+
+\newlist{cvlist}{itemize}{1}
+\setlist[cvlist]{leftmargin=1em,itemsep=0.12em,topsep=0.1em,parsep=0pt,label={}}
+
+\hypersetup{pdftitle={\VAR{person.name|tex} — Résumé}, pdfauthor={\VAR{person.name|tex}}}
+
+\begin{document}
+\small
+
+\begin{center}
+{\large\bfseries \VAR{person.name|tex}}\\[0.15em]
+{\footnotesize \VAR{person.affiliation|tex} · \VAR{person.location|tex}}\\[0.15em]
+{\footnotesize
+\href{mailto:\VAR{person.email}}{\VAR{person.email|tex}} ·
+\href{\VAR{person.website}}{\VAR{person.website|tex}} ·
+\href{https://orcid.org/\VAR{person.orcid}}{ORCID \VAR{person.orcid}}}
+\end{center}
+
+\BLOCK{for s in sections}
+\section*{\VAR{s.title|tex}}
+\BLOCK{if s.kind == 'static'}
+{\footnotesize \VAR{s.body|tex}}
+
+\BLOCK{else}
+\BLOCK{for g in s.groups}
+\BLOCK{if g.label}
+\subsection*{\VAR{g.label|tex}}
+\BLOCK{endif}
+\begin{cvlist}
+\BLOCK{for entry in g.entries}
+\BLOCK{include s.partial + '.tex.j2'}
+\BLOCK{endfor}
+\end{cvlist}
+\BLOCK{endfor}
+\BLOCK{endif}
+\BLOCK{endfor}
+
+\end{document}

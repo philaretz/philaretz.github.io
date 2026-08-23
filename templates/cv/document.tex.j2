@@ -1,0 +1,81 @@
+\documentclass[11pt,a4paper]{article}
+
+%% Full academic CV. Structure comes from Notion database 9 (Sections);
+%% this file only decides how things look. Compile with lualatex — Notion
+%% will hand you München and Erdős sooner or later.
+
+\usepackage{fontspec}
+\usepackage[margin=2.4cm,bottom=2.6cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{microtype}
+
+\setmainfont{TeX Gyre Pagella}
+\linespread{1.04}
+\setlength{\parindent}{0pt}
+% Long unbreakable tokens (URLs, German compounds) would otherwise push
+% into the margin. check.py fails the build above 5pt of overfull.
+\emergencystretch=1.2em
+\hyphenpenalty=1000
+
+\titleformat{\section}{\large\scshape}{}{0pt}{}[\vspace{-0.7em}\rule{\textwidth}{0.4pt}]
+\titlespacing{\section}{0pt}{1.25em}{0.55em}
+\titleformat{\subsection}{\normalsize\itshape}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{0.7em}{0.25em}
+
+\newlist{cvlist}{itemize}{1}
+\setlist[cvlist]{leftmargin=1.25em,itemsep=0.28em,topsep=0.2em,parsep=0pt,label={}}
+
+\hypersetup{pdftitle={\VAR{person.name|tex} — Curriculum Vitae},
+            pdfauthor={\VAR{person.name|tex}}}
+
+\begin{document}
+
+\BLOCK{if photo}
+\begin{minipage}{0.72\textwidth}
+\BLOCK{endif}
+{\LARGE\scshape \VAR{person.name|tex}}\\[0.35em]
+\VAR{person.affiliation|tex}\\
+\VAR{person.location|tex}\\[0.35em]
+\href{mailto:\VAR{person.email}}{\texttt{\VAR{person.email|tex}}} \quad
+\href{\VAR{person.website}}{\VAR{person.website|tex}}\\
+ORCID \href{https://orcid.org/\VAR{person.orcid}}{\VAR{person.orcid}} \quad
+INSPIRE \href{https://inspirehep.net/authors/\VAR{person.inspire_recid}}{\VAR{person.inspire_bai|tex}}
+\BLOCK{if photo}
+\end{minipage}\hfill
+\begin{minipage}{0.24\textwidth}\raggedleft
+\includegraphics[width=\linewidth]{\VAR{photo}}
+\end{minipage}
+\BLOCK{endif}
+
+\vspace{0.6em}
+
+\BLOCK{for s in sections}
+\BLOCK{if s.heading_style == 'subsection'}
+\subsection*{\VAR{s.title|tex}}
+\BLOCK{else}
+\section*{\VAR{s.title|tex}}
+\BLOCK{endif}
+\BLOCK{if s.kind == 'static'}
+\VAR{s.body|tex}
+
+\BLOCK{else}
+\BLOCK{for g in s.groups}
+\BLOCK{if g.label}
+\subsection*{\VAR{g.label|tex}}
+\BLOCK{endif}
+\begin{cvlist}
+\BLOCK{for entry in g.entries}
+\BLOCK{include s.partial + '.tex.j2'}
+\BLOCK{endfor}
+\end{cvlist}
+\BLOCK{endfor}
+\BLOCK{endif}
+\BLOCK{endfor}
+
+\vfill
+{\footnotesize\itshape Generated from Notion on \VAR{cv.generated[:10]}. References available on request.}
+
+\end{document}

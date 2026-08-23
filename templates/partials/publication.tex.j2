@@ -1,0 +1,4 @@
+\item \VAR{entry.authors|authors}, \emph{\VAR{entry.title|tex}}%
+\BLOCK{if entry.journal}, \VAR{entry.journal|tex}\BLOCK{endif}%
+\BLOCK{if entry.arxiv}, \href{https://arxiv.org/abs/\VAR{entry.arxiv}}{arXiv:\VAR{entry.arxiv}\BLOCK{if entry.primary_class}~[\VAR{entry.primary_class|tex}]\BLOCK{endif}}\BLOCK{endif}%
+\BLOCK{if entry.status == 'In preparation'} \emph{(in preparation)}\BLOCK{endif}.

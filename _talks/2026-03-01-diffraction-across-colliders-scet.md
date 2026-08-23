@@ -1,12 +1,13 @@
 ---
-title: "Diffraction across Colliders"
+title: "Diffraction Across Colliders"
 collection: talks
-type: "Conference talk"
+type: "Contributed talk"
 permalink: /talks/2026-03-01-diffraction-across-colliders-scet
 venue: "SCET 2026"
 date: 2026-03-01
-location: "KIAS, Seoul"
+location: "Seoul, South Korea"
 excerpt: "Factorization of diffraction and universality across colliders."
 ---
 
-Conference talk on factorization structures in diffraction and how universality can be leveraged across collider environments.
+Factorization of diffraction and universality across colliders.
+

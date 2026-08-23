@@ -16,3 +16,7 @@ _site/
 # Local Ruby/Bundler files
 .bundle/
 vendor/bundle/
+
+# CV pipeline scratch space and secrets — never committed
+/build/
+.env

@@ -1,0 +1,21 @@
+---
+title: "{{ entry.title }}"
+collection: publications
+category: {{ entry.status|lower|replace(' ', '-') }}
+permalink: /publication/{{ entry.slug }}
+excerpt: '{{ (entry.abstract or "")|replace("'", "''") }}'
+date: {{ entry.date }}
+venue: '{{ entry.journal or "Preprint" }}'
+authors: '{{ entry.authors }}'
+{% if entry.doi %}doi: '{{ entry.doi }}'
+{% endif %}{% if entry.arxiv %}arxiv: '{{ entry.arxiv }}'
+{% endif %}{% if entry.slides %}slidesurl: '{{ entry.slides }}'
+{% endif %}{% if entry.bibtex %}bibtexurl: '{{ entry.bibtex }}'
+{% endif %}citation: '{{ entry.citation }}'
+---
+
+{{ entry.abstract or "" }}
+
+{% if entry.arxiv %}Preprint: [arXiv:{{ entry.arxiv }}](https://arxiv.org/abs/{{ entry.arxiv }}){% if entry.primary_class %} [{{ entry.primary_class }}]{% endif %}.
+{% endif %}{% if entry.doi %}Published version: [{{ entry.journal }}]({{ entry.doi }}).
+{% endif %}

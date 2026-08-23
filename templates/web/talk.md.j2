@@ -1,0 +1,17 @@
+---
+title: "{{ entry.title }}"
+collection: talks
+type: "{{ entry.kind }}"
+permalink: /talks/{{ entry.date }}-{{ entry.slug }}
+venue: "{{ entry.event or entry.institution }}"
+date: {{ entry.date }}
+location: "{{ entry.location }}"
+{% if entry.slides %}talk_url: "{{ entry.slides }}"
+{% endif %}excerpt: "{{ entry.abstract or entry.title }}"
+---
+
+{{ entry.abstract or "" }}
+
+{% if entry.slides %}[Slides]({{ entry.slides }}){% if entry.recording %} · [Recording]({{ entry.recording }}){% endif %}
+{% elif entry.recording %}[Recording]({{ entry.recording }})
+{% endif %}
