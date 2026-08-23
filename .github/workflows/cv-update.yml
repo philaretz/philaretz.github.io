@@ -1,0 +1,76 @@
+name: Update CV
+
+# The only place NOTION_TOKEN needs to live for unattended runs: as a repo
+# secret consumed here. GitHub's own runners push and open PRs with the
+# built-in GITHUB_TOKEN, which sidesteps the "can a cloud session push"
+# question entirely — this workflow is the actual automation, independent
+# of any chat session.
+#
+# Never merges on its own: contents/pull-requests are write so it CAN open
+# a PR, but nothing here merges it. cv-update.yml is generated output like
+# everything else it touches — fix it by editing this file, not by hand-
+# patching a run.
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'  # Monday 08:00 UTC
+  workflow_dispatch: {}
+
+concurrency:
+  group: cv-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install TeX Live
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            texlive-xetex texlive-fonts-extra texlive-latex-extra \
+            latexmk poppler-utils
+
+      # sync (INSPIRE -> Notion) and cv-json (Notion -> data/cv.json) both
+      # need this; site/pdf/check do not touch the network at all.
+      - name: Run the pipeline
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: make all
+
+      # If `make all` failed above (most likely tools/check.py catching
+      # something), the job stops here and no PR is opened. The failed
+      # run itself — visible under the Actions tab, and emailed to repo
+      # watchers on scheduled-run failure by default — is the notification.
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Scheduled CV refresh"
+          branch: cv/scheduled-update
+          delete-branch: true
+          title: "Scheduled CV refresh"
+          body: |
+            Automated `make all`: INSPIRE sync, `data/cv.json` rebuild,
+            `_publications/`/`_talks/`/`_data/cv.json` regeneration,
+            `files/cv.pdf` + `files/resume.pdf` recompile, guardrail checks.
+
+            This ran because `tools/check.py` passed — see the job log for
+            its notes. Review the diff before merging, same as any other
+            CV change.
+          add-paths: |
+            data/cv.json
+            data/.state.json
+            _publications/**
+            _talks/**
+            _data/cv.json
+            files/cv.pdf
+            files/resume.pdf
