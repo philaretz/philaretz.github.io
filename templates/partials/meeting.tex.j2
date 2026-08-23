@@ -1,0 +1,4 @@
+\item \VAR{entry.title|tex}%
+\BLOCK{if entry.location}, \VAR{entry.location|tex}\BLOCK{endif}%
+\BLOCK{if entry.contribution and entry.contribution != 'Attended'}~({\small \VAR{entry.contribution|tex}})\BLOCK{endif}%
+\BLOCK{if entry.date} \hfill \VAR{entry.date|year}\BLOCK{endif}

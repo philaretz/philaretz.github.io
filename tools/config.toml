@@ -1,0 +1,36 @@
+# Identity — constants, not database rows.
+[person]
+name          = "Philipp Benjamin Aretz"
+short_name    = "P. B. Aretz"
+surname       = "Aretz"
+email         = "aretz24@mit.edu"
+affiliation   = "Center for Theoretical Physics, Massachusetts Institute of Technology"
+location      = "Cambridge, MA, USA"
+website       = "https://philaretz.github.io"
+orcid         = "0009-0002-9249-816X"
+inspire_bai   = "Philipp.Aretz.1"
+inspire_recid = 2967323
+github        = "philaretz"
+
+# Notion data sources, resolved once. Notion-Version: 2025-09-03 —
+# rows live at /v1/data_sources/{id}/query, not /v1/databases/{id}/query.
+[notion]
+version      = "2025-09-03"
+publications = "94c9f96a-e112-4903-8394-64d759a32120"
+talks        = "5abf10d0-3a56-42cd-8877-3d50cde983a3"
+education    = "9e4351cb-42ac-4e3c-9bb8-e5b6544fae94"
+positions    = "f2c23dcc-7f5b-46ee-9a48-be6105ca4af3"
+awards       = "60e9f3b7-0894-49bc-8c9e-3a4776ec3eb9"
+teaching     = "1f224405-04ed-4df7-a2b9-e0924adaf6db"
+service      = "9bf2f137-379a-4d4e-9723-70b3d8aaefed"
+meetings     = "f70b8f5b-fa67-41e7-bf6b-278abcdc7bc8"
+sections     = "be9fbfbb-70c0-4bd7-83b8-18ca314c21de"
+
+[inspire]
+# Query by BAI, never by name: "a Aretz" will eventually match a homonym.
+query = "a Philipp.Aretz.1"
+
+[check]
+resume_max_pages = 1
+min_talk_year    = 2024
+max_overfull_pt  = 5.0

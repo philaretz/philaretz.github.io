@@ -1,0 +1,5 @@
+\item \textbf{\VAR{entry.role|tex}}, \VAR{entry.organization|tex}%
+\BLOCK{if entry.location}, \VAR{entry.location|tex}\BLOCK{endif}%
+ \hfill \VAR{daterange(entry.start, entry.end)}%
+\BLOCK{if entry.group}\\ {\small \VAR{entry.group|tex}}\BLOCK{endif}%
+\BLOCK{if entry.description}\\ {\small \VAR{entry.description|tex}}\BLOCK{endif}

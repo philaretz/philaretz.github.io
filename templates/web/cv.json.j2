@@ -1,0 +1,49 @@
+{#- JSON Resume shape, consumed by _pages/cv.md.
+    academicpages already shipped an (unused, drifting) _data/cv.json;
+    this regenerates it so the web CV and the PDFs cannot disagree. -#}
+{
+  "basics": {
+    "name": {{ person.name|tojson }},
+    "email": {{ person.email|tojson }},
+    "website": {{ person.website|tojson }},
+    "summary": {{ (cv.sections|selectattr("source", "equalto", "static")|selectattr("title", "equalto", "Research interests")|map(attribute="body")|first) or ""|tojson }},
+    "location": {"city": "Cambridge, MA", "countryCode": "US"},
+    "profiles": [
+      {"network": "ORCID", "url": "https://orcid.org/{{ person.orcid }}"},
+      {"network": "INSPIRE-HEP", "url": "https://inspirehep.net/authors/{{ person.inspire_recid }}"},
+      {"network": "arXiv", "url": "https://arxiv.org/a/aretz_p_1"}
+    ]
+  },
+  "generated": {{ cv.generated|tojson }},
+  "sections": [
+{% for s in sections %}
+    {
+      "title": {{ s.title|tojson }},
+      "kind": {{ s.kind|tojson }},
+{% if s.kind == 'static' %}
+      "body": {{ s.body|tojson }}
+{% else %}
+      "groups": [
+{% for g in s.groups %}
+        {
+          "label": {{ g.label|tojson }},
+          "entries": [
+{% for e in g.entries %}
+            {
+              "title": {{ e.title|tojson }},
+              "date": {{ e.date|tojson }},
+              "detail": {{ (e.journal or e.event or e.institution or e.organization or e.awarding_body or e.degree or "")|tojson }},
+              "authors": {{ (e.authors or "")|tojson }},
+              "arxiv": {{ (e.arxiv or "")|tojson }},
+              "url": {{ (e.doi or e.slides or "")|tojson }}
+            }{{ "," if not loop.last }}
+{% endfor %}
+          ]
+        }{{ "," if not loop.last }}
+{% endfor %}
+      ]
+{% endif %}
+    }{{ "," if not loop.last }}
+{% endfor %}
+  ]
+}

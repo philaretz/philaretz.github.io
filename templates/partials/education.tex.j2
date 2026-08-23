@@ -1,0 +1,5 @@
+\item \textbf{\VAR{entry.degree|tex}\BLOCK{if entry.field} in \VAR{entry.field|tex}\BLOCK{endif}}, \VAR{entry.institution|tex}%
+\BLOCK{if entry.location}, \VAR{entry.location|tex}\BLOCK{endif}%
+ \hfill \VAR{daterange(entry.start, entry.end, present='present')}%
+\BLOCK{if entry.grade}\\ {\small \VAR{entry.grade|tex}}\BLOCK{endif}%
+\BLOCK{if entry.thesis}\\ {\small Thesis: \emph{\VAR{entry.thesis|tex}}\BLOCK{if entry.advisor} (advisor: \VAR{entry.advisor|tex})\BLOCK{endif}}\BLOCK{endif}
