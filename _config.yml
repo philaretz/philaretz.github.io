@@ -196,6 +196,15 @@ exclude:
   - README
   - tmp
   - vendor
+  # CV pipeline: Jinja2 sources and build tooling, not Jekyll content. Left
+  # unexcluded, Jekyll finds the leading "---" in the .j2 templates, treats
+  # them as pages, and tries to run their literal Jinja2 syntax through
+  # Liquid ("Unknown tag 'elif'" is that, not a real Liquid problem).
+  - templates
+  - tools
+  - data
+  - fixtures
+  - Makefile
 keep_files:
   - .git
   - .svn
