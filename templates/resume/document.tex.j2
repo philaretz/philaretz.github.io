@@ -13,6 +13,8 @@
 \usepackage{titlesec}
 \usepackage{graphicx}
 \usepackage{microtype}
+\usepackage{fontawesome5}
+\usepackage{academicons}
 
 \setmainfont{TeX Gyre Heros}
 \linespread{1.0}
@@ -37,10 +39,10 @@
 \begin{center}
 {\large\bfseries \VAR{person.name|tex}}\\[0.15em]
 {\footnotesize \VAR{person.affiliation|tex} · \VAR{person.location|tex}}\\[0.15em]
-{\footnotesize
-\href{mailto:\VAR{person.email}}{\VAR{person.email|tex}} ·
-\href{\VAR{person.website}}{\VAR{person.website|tex}} ·
-\href{https://orcid.org/\VAR{person.orcid}}{ORCID \VAR{person.orcid}}}
+{\normalsize
+\href{mailto:\VAR{person.email}}{\faEnvelope}\enspace
+\href{\VAR{person.website}}{\faGlobe}\enspace
+\href{https://orcid.org/\VAR{person.orcid}}{\aiOrcid}}
 \end{center}
 
 \BLOCK{for s in sections}
