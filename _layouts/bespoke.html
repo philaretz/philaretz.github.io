@@ -8,6 +8,16 @@ layout: compress
 <meta charset="utf-8">
 {% include seo.html %}
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') {
+        document.documentElement.setAttribute('data-theme', t);
+      }
+    } catch (e) {}
+  })();
+</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/theme.css">
 {% include head/custom.html %}
@@ -16,7 +26,10 @@ layout: compress
 <div class="site">
   <header class="site-header">
     <a href="{{ base_path }}/" class="wordmark">{{ site.author.name }}</a>
-    {% include bespoke/nav.html %}
+    <div class="site-header__right">
+      {% include bespoke/nav.html %}
+      {% include bespoke/theme-toggle.html %}
+    </div>
   </header>
 
   <main class="page">
@@ -31,5 +44,6 @@ layout: compress
 </div>
 {% include footer/custom.html %}
 {% include analytics.html %}
+<script defer src="{{ base_path }}/assets/js/theme-toggle.js"></script>
 </body>
 </html>

@@ -11,6 +11,8 @@
 \usepackage{titlesec}
 \usepackage{graphicx}
 \usepackage{microtype}
+\usepackage{fontawesome5}
+\usepackage{academicons}
 
 \setmainfont{TeX Gyre Pagella}
 \linespread{1.04}
@@ -39,10 +41,11 @@
 {\LARGE\scshape \VAR{person.name|tex}}\\[0.35em]
 \VAR{person.affiliation|tex}\\
 \VAR{person.location|tex}\\[0.35em]
-\href{mailto:\VAR{person.email}}{\texttt{\VAR{person.email|tex}}} \quad
-\href{\VAR{person.website}}{\VAR{person.website|tex}}\\
-ORCID \href{https://orcid.org/\VAR{person.orcid}}{\VAR{person.orcid}} \quad
-INSPIRE \href{https://inspirehep.net/authors/\VAR{person.inspire_recid}}{\VAR{person.inspire_bai|tex}}
+{\large
+\href{mailto:\VAR{person.email}}{\faEnvelope}\enspace
+\href{\VAR{person.website}}{\faGlobe}\enspace
+\href{https://orcid.org/\VAR{person.orcid}}{\aiOrcid}\enspace
+\href{https://inspirehep.net/authors/\VAR{person.inspire_recid}}{\aiInspire}}
 \BLOCK{if photo}
 \end{minipage}\hfill
 \begin{minipage}{0.24\textwidth}\raggedleft
@@ -76,6 +79,6 @@ INSPIRE \href{https://inspirehep.net/authors/\VAR{person.inspire_recid}}{\VAR{pe
 \BLOCK{endfor}
 
 \vfill
-{\footnotesize\itshape Generated from Notion on \VAR{cv.generated[:10]}. References available on request.}
+{\footnotesize\itshape References available on request.}
 
 \end{document}
