@@ -69,8 +69,9 @@ jobs:
       # sitting right there on disk.
       - name: Register TeX Live fonts with fontconfig
         run: |
-          tlmgr generate fontconfig
-          sudo cp "$(kpsewhich texlive-fontconfig.conf)" /etc/fonts/conf.d/09-texlive-fonts.conf
+          FONTDIR=$(dirname "$(dirname "$(dirname "$(kpsewhich texgyrepagella-regular.otf)")")")
+          mkdir -p ~/.local/share/fonts
+          cp -r "$FONTDIR" ~/.local/share/fonts/texlive-opentype
           fc-cache -fv
 
       - name: Install poppler-utils
