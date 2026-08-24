@@ -23,6 +23,7 @@
             {
               "title": "Massachusetts Institute of Technology",
               "date": "2024-09-01",
+              "date_range": "2024--present",
               "detail": "Massachusetts Institute of Technology",
               "authors": "",
               "arxiv": "",
@@ -31,6 +32,7 @@
             {
               "title": "University of Cambridge",
               "date": "2023-10-01",
+              "date_range": "2023--2024",
               "detail": "University of Cambridge",
               "authors": "",
               "arxiv": "",
@@ -39,6 +41,7 @@
             {
               "title": "Heidelberg University",
               "date": "2020-10-01",
+              "date_range": "2020--2023",
               "detail": "Heidelberg University",
               "authors": "",
               "arxiv": "",
@@ -58,6 +61,7 @@
             {
               "title": "A rigorous Keldysh functional integral for fermions",
               "date": "2025-08-03",
+              "date_range": "2025",
               "detail": "J.Statist.Phys. 193 (2026) 28",
               "authors": "P. B. Aretz, M. Salmhofer",
               "arxiv": "2508.01787",
@@ -66,6 +70,7 @@
             {
               "title": "Families of periodic delay orbits",
               "date": "2023-04-15",
+              "date_range": "2023",
               "detail": "J. Differential Equations 410 (2024) 228-250",
               "authors": "P. Albers, P. Aretz, I. Seifert",
               "arxiv": "2304.07550",
@@ -79,6 +84,7 @@
             {
               "title": "Factorization of elastic, single, and double diffractive $pp$ scattering",
               "date": "2026-07-08",
+              "date_range": "2026",
               "detail": "",
               "authors": "P. B. Aretz, K. Lee, S. T. Schindler, I. W. Stewart",
               "arxiv": "2607.07788",
@@ -98,6 +104,7 @@
             {
               "title": "Diffraction at the LHC",
               "date": "2026-08-12",
+              "date_range": "2026",
               "detail": "ESI - New Paradigms for Harnessing Quantum Field Theory at Colliders",
               "authors": "",
               "arxiv": "",
@@ -106,6 +113,7 @@
             {
               "title": "Generalised Detectors in Heavy Ion Collisions",
               "date": "2026-08-05",
+              "date_range": "2026",
               "detail": "ESI - New Paradigms for Harnessing Quantum Field Theory at Colliders",
               "authors": "",
               "arxiv": "",
@@ -114,6 +122,7 @@
             {
               "title": "Diffraction Across Colliders",
               "date": "2026-06-17",
+              "date_range": "2026",
               "detail": "TASI - Exploring Fundamental Physics from Colliders to the Cosmos",
               "authors": "",
               "arxiv": "",
@@ -122,6 +131,7 @@
             {
               "title": "Diffraction Across Colliders",
               "date": "2026-03-01",
+              "date_range": "2026",
               "detail": "SCET 2026",
               "authors": "",
               "arxiv": "",
@@ -141,6 +151,7 @@
             {
               "title": "Tom Frank Fellowship",
               "date": "2024-01-01",
+              "date_range": "2024",
               "detail": "Massachusetts Institute of Technology",
               "authors": "",
               "arxiv": "",
@@ -149,6 +160,7 @@
             {
               "title": "Jennings Prize",
               "date": "2024-01-01",
+              "date_range": "2024",
               "detail": "University of Cambridge",
               "authors": "",
               "arxiv": "",
