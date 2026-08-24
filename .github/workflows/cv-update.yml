@@ -43,7 +43,7 @@ jobs:
       # directly instead, matching what a normal MacTeX/TeX Live install
       # gets, with its own caching so this doesn't redownload every run.
       - name: Install TeX Live
-        uses: teatimeguest/setup-texlive-action@v3
+        uses: TeX-Live/setup-texlive-action@v4
         with:
           packages: |
             scheme-basic
