@@ -13,3 +13,25 @@
   --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
   --font-sans: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
 }
+
+/* Dark palette - same warm, low-chroma neutrals (hue 150) inverted, and
+   the accent lightened to the same hue/chroma family for contrast on a
+   dark ground. See design-dark-mode.md for the full rationale.
+   Two ways in: the OS preference (unless overridden), or an explicit
+   choice from the theme toggle, stamped as data-theme on <html>. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: oklch(19% 0.010 150);
+    --text: oklch(93% 0.006 150);
+    --text-muted: oklch(65% 0.014 150);
+    --border: oklch(30% 0.014 150);
+    --accent: oklch(70% 0.10 150);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: oklch(19% 0.010 150);
+  --text: oklch(93% 0.006 150);
+  --text-muted: oklch(65% 0.014 150);
+  --border: oklch(30% 0.014 150);
+  --accent: oklch(70% 0.10 150);
+}

@@ -8,10 +8,19 @@
 .site-header { display: flex; align-items: center; justify-content: space-between; padding: 28px 48px; border-bottom: 1px solid var(--border); }
 .wordmark { font-family: var(--font-serif); font-style: italic; font-size: 20px; font-weight: 500; color: var(--text); text-decoration: none; }
 
+.site-header__right { display: flex; align-items: center; gap: 16px; }
+
 .site-nav { display: flex; gap: 4px; }
 .nav-link { font-family: var(--font-sans); font-size: 14px; color: var(--text-muted); text-decoration: none; padding: 6px 14px; border-radius: 8px; }
 .nav-link:hover { color: var(--text); background: color-mix(in oklch, var(--accent) 8%, transparent); }
 .nav-link.active { color: var(--text); font-weight: 500; background: color-mix(in oklch, var(--accent) 12%, transparent); }
+
+/* Theme toggle - three-way segmented control (light / dark / system). */
+.theme-toggle { display: flex; align-items: center; gap: 2px; padding: 3px; border-radius: 9px; border: 1px solid var(--border); }
+.theme-toggle__btn { display: flex; align-items: center; justify-content: center; width: 26px; height: 26px; padding: 0; border: none; border-radius: 6px; background: transparent; color: var(--text-muted); cursor: pointer; }
+.theme-toggle__btn:hover { color: var(--text); background: color-mix(in oklch, var(--accent) 8%, transparent); }
+.theme-toggle__btn.active { color: var(--text); background: color-mix(in oklch, var(--accent) 14%, transparent); }
+.theme-toggle__btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 
 /* Main content column - every page's <main> gets this class. */
 .page { flex: 1; max-width: 880px; margin: 0 auto; width: 100%; padding: 64px 48px 96px; }
@@ -24,6 +33,7 @@
    the edge of the screen, and tighten padding a little. */
 @media (max-width: 640px) {
   .site-header { flex-wrap: wrap; gap: 12px; padding: 20px 24px; }
+  .site-header__right { flex-wrap: wrap; }
   .site-nav { flex-wrap: wrap; }
   .page { padding: 40px 24px 64px; }
 }
