@@ -36,12 +36,46 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
+      # Ubuntu's apt-packaged TeX Live is a frozen, dated snapshot (2023 as
+      # of writing) — old enough that hyperref+xetex has a real bug with
+      # symbol-font (academicons/fontawesome5) link text that a current
+      # TeX Live doesn't have. install-tl via this action tracks CTAN
+      # directly instead, matching what a normal MacTeX/TeX Live install
+      # gets, with its own caching so this doesn't redownload every run.
       - name: Install TeX Live
+        uses: TeX-Live/setup-texlive-action@v4
+        with:
+          # Explicit packages, not whole collections (collection-fontsextra
+          # alone is enormous and made a from-scratch install take 15+
+          # minutes) — tlmgr resolves each package's own dependencies.
+          packages: |
+            scheme-basic
+            xetex
+            fontspec
+            hyperref
+            enumitem
+            titlesec
+            geometry
+            microtype
+            academicons
+            fontawesome5
+            tex-gyre
+            latexmk
+
+      # install-tl doesn't register its fonts with Linux's fontconfig the
+      # way a distro package's postinst script would — fontspec/xetex use
+      # fontconfig to resolve font names on Linux, so without this step
+      # \setmainfont{TeX Gyre Pagella} can't find a font that is, in fact,
+      # sitting right there on disk.
+      - name: Register TeX Live fonts with fontconfig
         run: |
-          sudo apt-get update
-          sudo apt-get install -y --no-install-recommends \
-            texlive-xetex texlive-fonts-extra texlive-latex-extra \
-            latexmk poppler-utils
+          FONTDIR=$(dirname "$(dirname "$(dirname "$(kpsewhich texgyrepagella-regular.otf)")")")
+          mkdir -p ~/.local/share/fonts
+          cp -r "$FONTDIR" ~/.local/share/fonts/texlive-opentype
+          fc-cache -fv
+
+      - name: Install poppler-utils
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends poppler-utils
 
       # sync (INSPIRE -> Notion) and cv-json (Notion -> data/cv.json) both
       # need this; site/pdf/check do not touch the network at all.
