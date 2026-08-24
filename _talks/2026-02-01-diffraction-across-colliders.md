@@ -2,6 +2,7 @@
 title: "Diffraction across Colliders"
 collection: talks
 type: "Outreach"
+scope: "Institutional"
 permalink: /talks/2026-02-01-diffraction-across-colliders
 venue: "MIT Graduate Student Seminar"
 date: 2026-02-01
