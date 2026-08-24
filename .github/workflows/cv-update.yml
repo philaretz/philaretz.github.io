@@ -33,6 +33,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
       - name: Install TeX Live
         run: |
           sudo apt-get update
