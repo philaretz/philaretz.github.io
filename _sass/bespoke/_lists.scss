@@ -1,0 +1,56 @@
+/* ==========================================================================
+   List-entry pattern - a narrow date/year column beside a serif title and
+   sans-serif meta line. Three width variants depending on content:
+     64px  - short teaser dates on Home
+     96px  - Publications / Talks full entries
+     150px - CV date ranges
+   ========================================================================== */
+
+/* Home teaser list (Selected Publications / Selected Talks) - 64px column. */
+.mini-list { list-style: none; margin: 0 0 20px; padding: 0; display: flex; flex-direction: column; gap: 0; }
+.mini-list li { display: grid; grid-template-columns: 64px 1fr auto; gap: 16px; align-items: baseline; padding: 16px 0; border-bottom: 1px solid var(--border); }
+.mini-list li:last-child { border-bottom: none; padding-bottom: 0; }
+.mini-date { font-family: var(--font-sans); font-size: 13px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.mini-title { font-family: var(--font-serif); font-size: 17px; color: var(--text); text-decoration: none; }
+.mini-title:hover { color: var(--accent); }
+.mini-venue { font-family: var(--font-sans); font-size: 13px; color: var(--text-muted); text-align: right; white-space: nowrap; }
+
+/* Publications page full entries - 96px column, wrapped in a tinted panel per entry. */
+.pub-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 20px; }
+.pub-entry { display: grid; grid-template-columns: 96px 1fr; gap: 24px; padding: 24px 28px; border-radius: 16px; background: color-mix(in oklch, var(--accent) 4%, var(--bg)); }
+.pub-year { font-family: var(--font-sans); font-size: 14px; color: var(--text-muted); font-variant-numeric: tabular-nums; padding-top: 4px; }
+.pub-title { display: block; font-family: var(--font-serif); font-size: 20px; font-weight: 500; color: var(--text); text-decoration: none; margin-bottom: 8px; line-height: 1.3; }
+.pub-title:hover { color: var(--accent); }
+.pub-title-muted { color: var(--text-muted); font-style: italic; }
+.pub-meta { font-family: var(--font-sans); font-size: 14px; color: var(--text-muted); margin: 0 0 12px; line-height: 1.5; }
+.pub-links { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.pub-link { font-family: var(--font-sans); font-size: 13px; color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+.pub-link:hover { border-bottom-color: var(--accent); }
+.pub-link-disabled { color: var(--text-muted); font-style: italic; }
+
+/* Talks page full entries - same shape as Publications, own class names. */
+.talk-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 20px; }
+.talk-entry { display: grid; grid-template-columns: 96px 1fr; gap: 24px; padding: 24px 28px; border-radius: 16px; background: color-mix(in oklch, var(--accent) 4%, var(--bg)); }
+.talk-date { font-family: var(--font-sans); font-size: 14px; color: var(--text-muted); font-variant-numeric: tabular-nums; padding-top: 4px; }
+.talk-title { display: block; font-family: var(--font-serif); font-size: 20px; font-weight: 500; color: var(--text); text-decoration: none; margin-bottom: 6px; line-height: 1.3; }
+.talk-title:hover { color: var(--accent); }
+.talk-venue { font-family: var(--font-sans); font-size: 14px; color: var(--text-muted); margin: 0; line-height: 1.5; }
+
+/* CV page entries - 150px column, no panel fill (lives inside a .section already). */
+.cv-entry-list { display: flex; flex-direction: column; }
+.cv-entry { display: grid; grid-template-columns: 150px 1fr; gap: 20px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+.cv-entry:first-child { padding-top: 0; }
+.cv-entry:last-child { border-bottom: none; padding-bottom: 0; }
+.cv-date { font-family: var(--font-sans); font-size: 13px; color: var(--text-muted); font-variant-numeric: tabular-nums; padding-top: 2px; }
+.cv-title { font-family: var(--font-serif); font-size: 17px; font-weight: 500; color: var(--text); margin: 0 0 4px; line-height: 1.35; }
+.cv-sub { font-family: var(--font-sans); font-size: 13px; color: var(--text-muted); margin: 0; line-height: 1.5; }
+
+/* CV "flat list, no dates" pattern - Awards & Funding. */
+.cv-list-plain { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.cv-list-plain li { font-family: var(--font-sans); font-size: 14px; color: var(--text); }
+.cv-list-plain li span { color: var(--text-muted); }
+
+/* CV plain paragraphs - Skills & Languages. */
+.cv-text-block p { font-family: var(--font-sans); font-size: 14px; color: var(--text); line-height: 1.65; margin: 0 0 12px; }
+.cv-text-block p:last-child { margin-bottom: 0; }
+.cv-text-block strong { font-weight: 600; }

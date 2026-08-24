@@ -1,0 +1,20 @@
+/* ==========================================================================
+   CV page header block (name / role / contact line above the numbered
+   sections - distinct from the generic .page-head used elsewhere)
+   ========================================================================== */
+
+.cv-header { padding-bottom: 32px; margin-bottom: 40px; border-bottom: 1px solid var(--border); }
+.cv-header h1 { font-family: var(--font-serif); font-size: 38px; font-weight: 500; margin: 0 0 10px; }
+.cv-role { font-family: var(--font-sans); font-size: 16px; color: var(--text-muted); margin: 0 0 16px; }
+.cv-contact { font-family: var(--font-sans); font-size: 14px; color: var(--text-muted); }
+.cv-contact a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+.cv-contact a:hover { border-bottom-color: var(--accent); }
+
+/* Printing/saving the CV page itself as a backup to the generated PDF -
+   drop the chrome and tinted panels, since neither prints usefully. */
+@media print {
+  .site-header, .site-footer, .see-all { display: none; }
+  .section { background: none; padding: 0; }
+  .section + .section { margin-top: 24px; }
+  .page { padding: 0; max-width: none; }
+}

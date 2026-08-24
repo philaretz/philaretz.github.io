@@ -1,0 +1,35 @@
+---
+layout: compress
+---
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}">
+<head>
+{% include base_path %}
+<meta charset="utf-8">
+{% include seo.html %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/theme.css">
+{% include head/custom.html %}
+</head>
+<body>
+<div class="site">
+  <header class="site-header">
+    <a href="{{ base_path }}/" class="wordmark">{{ site.author.name }}</a>
+    {% include bespoke/nav.html %}
+  </header>
+
+  <main class="page">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</span>
+    <span class="dot">&middot;</span>
+    <a href="https://github.com/{{ site.repository }}" class="footer-link">Source on GitHub</a>
+  </footer>
+</div>
+{% include footer/custom.html %}
+{% include analytics.html %}
+</body>
+</html>

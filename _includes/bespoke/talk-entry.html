@@ -1,0 +1,13 @@
+{% comment %}
+  Renders one <li class="talk-entry"> from a site.talks item.
+  Usage: {% include bespoke/talk-entry.html post=post %}
+{% endcomment %}
+{% assign post = include.post %}
+<li class="talk-entry">
+  <div class="talk-date">{{ post.date | date: "%b %Y" }}</div>
+  <div>
+    {% if post.type %}<span class="talk-tag">{{ post.type }}</span>{% endif %}
+    <a href="{{ post.url | relative_url }}" class="talk-title">{{ post.title }}</a>
+    <p class="talk-venue">{{ post.venue }}{% if post.location %}, {{ post.location }}{% endif %}</p>
+  </div>
+</li>

@@ -1,0 +1,32 @@
+{% comment %}
+  Renders one .section for a CV category, from an item of site.data.cv.sections
+  (the JSON-Resume-shaped file the cv-update pipeline regenerates). Handles
+  both "static" (prose) and "entries" (grouped list) section kinds, so any
+  new section Notion's Sections DB routes to the "web" target picks up this
+  same styling automatically — no template change needed.
+  Usage: {% include bespoke/cv-section.html section=section %}
+{% endcomment %}
+{% assign section = include.section %}
+<section class="section">
+  <h2 class="section-label">{{ section.title }}</h2>
+  {% if section.kind == "static" %}
+    <div class="cv-text-block"><p>{{ section.body }}</p></div>
+  {% else %}
+    {% for group in section.groups %}
+      {% if group.label %}<h3 class="section-label" style="margin-top: 20px;">{{ group.label }}</h3>{% endif %}
+      <div class="cv-entry-list">
+        {% for entry in group.entries %}
+          <div class="cv-entry">
+            <div class="cv-date">{{ entry.date | date: "%Y" }}</div>
+            <div>
+              <p class="cv-title">{{ entry.title }}</p>
+              {% if entry.detail != "" or entry.authors != "" %}
+                <p class="cv-sub">{{ entry.detail }}{% if entry.authors != "" %}{% if entry.detail != "" %} &middot; {% endif %}{{ entry.authors }}{% endif %}</p>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  {% endif %}
+</section>

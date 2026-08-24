@@ -1,0 +1,9 @@
+{% comment %}
+  One compact <li> for Home's teaser lists (Selected Publications / Talks).
+  Usage: {% include bespoke/mini-entry.html url=post.url date=... title=... venue=... %}
+{% endcomment %}
+<li>
+  <span class="mini-date">{{ include.date }}</span>
+  {% if include.url %}<a href="{{ include.url | relative_url }}" class="mini-title">{{ include.title }}</a>{% else %}<span class="mini-title">{{ include.title }}</span>{% endif %}
+  <span class="mini-venue">{{ include.venue }}</span>
+</li>

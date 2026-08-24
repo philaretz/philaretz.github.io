@@ -282,8 +282,7 @@ defaults:
       path: ""
       type: publications
     values:
-      layout: single
-      author_profile: true
+      layout: bespoke-entry
       share: true
       comments: true
   # _portfolio
@@ -300,8 +299,7 @@ defaults:
       path: ""
       type: talks
     values:
-      layout: talk
-      author_profile: true
+      layout: bespoke-entry
       share: true
 
 
