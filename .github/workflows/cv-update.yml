@@ -36,12 +36,25 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
+      # Ubuntu's apt-packaged TeX Live is a frozen, dated snapshot (2023 as
+      # of writing) — old enough that hyperref+xetex has a real bug with
+      # symbol-font (academicons/fontawesome5) link text that a current
+      # TeX Live doesn't have. install-tl via this action tracks CTAN
+      # directly instead, matching what a normal MacTeX/TeX Live install
+      # gets, with its own caching so this doesn't redownload every run.
       - name: Install TeX Live
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y --no-install-recommends \
-            texlive-xetex texlive-fonts-extra texlive-latex-extra \
-            latexmk poppler-utils
+        uses: teatimeguest/setup-texlive-action@v3
+        with:
+          packages: |
+            scheme-basic
+            collection-xetex
+            collection-latexextra
+            collection-fontsextra
+            collection-fontsrecommended
+            latexmk
+
+      - name: Install poppler-utils
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends poppler-utils
 
       # sync (INSPIRE -> Notion) and cv-json (Notion -> data/cv.json) both
       # need this; site/pdf/check do not touch the network at all.
