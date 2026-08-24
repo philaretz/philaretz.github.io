@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <section class="hero">
-  <div class="avatar" aria-hidden="true">PA</div>
+  <div class="avatar"><img src="/images/bio-avatar.jpg" alt="{{ site.author.name }}"></div>
   <div class="hero-text">
     <h1>{{ site.author.name }}</h1>
     <p class="affiliation">PhD Student in Theoretical High-Energy Physics<br>{{ site.author.employer }} Center for Theoretical Physics</p>

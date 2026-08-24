@@ -3,9 +3,8 @@
    ========================================================================== */
 
 .hero { display: grid; grid-template-columns: 168px 1fr; gap: 48px; align-items: start; padding-bottom: 56px; margin-bottom: 56px; border-bottom: 1px solid var(--border); }
-.avatar { width: 168px; height: 168px; border-radius: 12px; background: color-mix(in oklch, var(--accent) 10%, white); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-style: italic; font-size: 44px; color: var(--accent); }
-/* ^ Placeholder avatar showing initials - replace with a real <img> once a
-     headshot is available. Keep the 168x168 / 12px-radius / 1px-border frame. */
+.avatar { width: 168px; height: 168px; border-radius: 12px; background: color-mix(in oklch, var(--accent) 10%, var(--bg)); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-style: italic; font-size: 44px; color: var(--accent); overflow: hidden; }
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
 
 .hero h1 { font-family: var(--font-serif); font-size: 42px; font-weight: 500; line-height: 1.15; margin: 0 0 10px; }
 .affiliation { font-family: var(--font-sans); font-size: 16px; color: var(--text-muted); line-height: 1.5; margin: 0 0 20px; }
