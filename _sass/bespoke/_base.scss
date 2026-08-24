@@ -1,0 +1,13 @@
+/* ---- Base ---- */
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-serif); }
+a { color: var(--accent); }
+a:hover { color: var(--accent); }
+
+/* Keyboard-navigation focus states - the approved mockups didn't specify
+   one, added so tabbing through nav/links/footer stays visible. */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

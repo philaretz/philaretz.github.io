@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Design tokens - change these and the whole site follows. Accent
+   alternates reviewed and rejected in favor of the default: deep forest
+   #2f6b52, teal-green #3f6b6b, slate-blue #5c7a94.
+   ========================================================================== */
+:root {
+  --bg: oklch(97.3% 0.008 150);
+  --text: oklch(23% 0.014 150);
+  --text-muted: oklch(48% 0.012 150);
+  --border: oklch(89% 0.01 150);
+  --accent: #4a7c64;
+
+  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+}

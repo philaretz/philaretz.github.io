@@ -1,0 +1,27 @@
+---
+layout: bespoke
+---
+<article>
+  <div class="page-head">
+    <h1>{{ page.title }}</h1>
+    {% if page.collection == "publications" %}
+      <p class="page-sub">{{ page.venue }}{% if page.date %} &middot; {{ page.date | date: "%Y" }}{% endif %}</p>
+      {% if page.authors %}<p class="pub-meta">{{ page.authors }}</p>{% endif %}
+    {% elsif page.collection == "talks" %}
+      <p class="page-sub">{{ page.venue }}{% if page.location %}, {{ page.location }}{% endif %} &middot; {{ page.date | date: "%b %Y" }}</p>
+    {% endif %}
+  </div>
+
+  {% if page.arxiv or page.doi or page.bibtexurl or page.talk_url %}
+  <div class="pub-links" style="margin-bottom: 32px;">
+    {% if page.arxiv %}<a class="pub-link" href="https://arxiv.org/abs/{{ page.arxiv }}">arXiv</a>{% endif %}
+    {% if page.doi %}<a class="pub-link" href="{{ page.doi }}">Journal</a>{% endif %}
+    {% if page.bibtexurl %}<a class="pub-link" href="{{ page.bibtexurl | relative_url }}">BibTeX</a>{% endif %}
+    {% if page.talk_url %}<a class="pub-link" href="{{ page.talk_url }}">Slides</a>{% endif %}
+  </div>
+  {% endif %}
+
+  <div class="cv-text-block">
+    {{ content }}
+  </div>
+</article>

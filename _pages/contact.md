@@ -2,12 +2,24 @@
 title: "Contact"
 permalink: /contact/
 description: "Contact details for Philipp Aretz at MIT, including email and office location."
-author_profile: true
+layout: bespoke
 ---
 
-I welcome messages about research, collaborations, and academic opportunities.
+<section class="page-head">
+  <h1>Contact</h1>
+</section>
 
-- Email: [aretz24@mit.edu](mailto:aretz24@mit.edu)
-- Office: [MIT, Room 6-413](http://whereis.mit.edu/?go=6-413)
+<p class="contact-lead">I welcome messages about research, collaborations, and academic opportunities — including a short context note helps me respond quickly.</p>
 
-If you are reaching out about a paper or talk, including a short context note helps me respond quickly.
+<a href="mailto:{{ site.author.email }}" class="contact-email">{{ site.author.email }}</a>
+<p class="contact-affil">{{ site.author.employer }} Center for Theoretical Physics<br>Office: <a href="http://whereis.mit.edu/?go=6-413">MIT, Room 6-413</a><br>{{ site.author.location }}</p>
+
+<h2 class="section-label">Elsewhere</h2>
+<div class="link-row">
+  {% if site.author.arxiv %}<a href="{{ site.author.arxiv }}">arXiv</a><span class="dot">&middot;</span>{% endif %}
+  {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}">Google Scholar</a><span class="dot">&middot;</span>{% endif %}
+  {% if site.author.orcid %}<a href="{{ site.author.orcid }}">ORCID</a><span class="dot">&middot;</span>{% endif %}
+  {% if site.author.inspire-hep %}<a href="{{ site.author.inspire-hep }}">INSPIRE-HEP</a><span class="dot">&middot;</span>{% endif %}
+  {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}">GitHub</a>{% endif %}
+  {% if site.author.linkedin %}<span class="dot">&middot;</span><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>{% endif %}
+</div>

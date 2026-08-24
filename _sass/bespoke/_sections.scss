@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Simple page heading - used on Publications, Talks, Contact (any page
+   that isn't Home and isn't the CV, which has its own richer header).
+   ========================================================================== */
+
+.page-head { margin-bottom: 48px; }
+.page-head h1 { font-family: var(--font-serif); font-size: 38px; font-weight: 500; margin: 0 0 12px; }
+.page-sub { font-family: var(--font-sans); font-size: 16px; color: var(--text-muted); margin: 0; }
+
+/* ==========================================================================
+   Section panel - the recurring "grouped content block" pattern. Used for
+   Home's Current Projects / Selected Publications / Selected Talks, and
+   for every category on the CV page.
+
+   Note: Home uses margin-top: 40px between sections; CV uses 32px (CV has
+   more sections stacked, so slightly tighter rhythm) - kept as a
+   deliberate distinction rather than normalized to one value.
+   ========================================================================== */
+
+.section { padding: 28px 32px; border-radius: 16px; background: color-mix(in oklch, var(--accent) 4%, var(--bg)); }
+.section + .section { margin-top: 40px; }
+.section-label { font-family: var(--font-sans); font-size: 12px; text-transform: uppercase; letter-spacing: 0.09em; font-weight: 600; color: var(--accent); margin: 0 0 20px; }
+
+/* Small status/state tag, e.g. "Ongoing", "Preprint", "In preparation". */
+.status,
+.pub-status,
+.talk-tag { display: inline-block; font-family: var(--font-sans); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 10px; }
+.pub-status-progress { color: var(--text-muted); }
+
+/* Text link with an underline that appears on hover. */
+.see-all { display: inline-block; font-family: var(--font-sans); font-size: 14px; color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+.see-all:hover { border-bottom-color: var(--accent); }
+
+/* Inline link row separated by middots, e.g. Email . arXiv . Google Scholar ... */
+.link-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; font-family: var(--font-sans); font-size: 14px; }
+.link-row a { text-decoration: none; border-bottom: 1px solid transparent; }
+.link-row a:hover { border-bottom-color: var(--accent); }
+.dot { color: var(--border); }

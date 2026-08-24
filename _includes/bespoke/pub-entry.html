@@ -1,0 +1,22 @@
+{% comment %}
+  Renders one <li class="pub-entry"> from a site.publications item.
+  Usage: {% include bespoke/pub-entry.html post=post %}
+{% endcomment %}
+{% assign post = include.post %}
+{% assign is_preprint = false %}
+{% if post.category == "preprints" %}{% assign is_preprint = true %}{% endif %}
+<li class="pub-entry">
+  <div class="pub-year">{{ post.date | date: "%Y" }}</div>
+  <div>
+    {% if is_preprint %}<span class="pub-status">Preprint</span>{% endif %}
+    <a href="{{ post.url | relative_url }}" class="pub-title">{{ post.title }}</a>
+    <p class="pub-meta">
+      {% if is_preprint %}{{ post.authors }}{% else %}{{ post.venue }}{% if post.arxiv %} &middot; arXiv:{{ post.arxiv }}{% endif %}{% endif %}
+    </p>
+    <div class="pub-links">
+      {% if post.arxiv %}<a href="https://arxiv.org/abs/{{ post.arxiv }}" class="pub-link">arXiv</a>{% endif %}
+      {% if post.doi %}<a href="{{ post.doi }}" class="pub-link">Journal</a>{% endif %}
+      {% if post.bibtexurl %}<a href="{{ post.bibtexurl | relative_url }}" class="pub-link">BibTeX</a>{% endif %}
+    </div>
+  </div>
+</li>

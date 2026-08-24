@@ -1,0 +1,10 @@
+{% include base_path %}
+<nav class="site-nav">
+  {% for link in site.data.navigation.main %}
+    {% assign domain = '' %}
+    {% unless link.url contains 'http' %}{% assign domain = base_path %}{% endunless %}
+    {% assign is_active = false %}
+    {% if page.url == link.url %}{% assign is_active = true %}{% endif %}
+    <a href="{{ domain }}{{ link.url }}" class="nav-link{% if is_active %} active{% endif %}">{{ link.title }}</a>
+  {% endfor %}
+</nav>
