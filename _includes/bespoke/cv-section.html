@@ -17,7 +17,7 @@
       <div class="cv-entry-list">
         {% for entry in group.entries %}
           <div class="cv-entry">
-            <div class="cv-date">{{ entry.date | date: "%Y" }}</div>
+            <div class="cv-date">{{ entry.date_range | replace: "--", "&ndash;" }}</div>
             <div>
               <p class="cv-title">{{ entry.title }}</p>
               {% assign show_detail = false %}

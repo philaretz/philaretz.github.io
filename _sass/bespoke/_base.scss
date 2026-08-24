@@ -1,5 +1,9 @@
 /* ---- Base ---- */
 * { box-sizing: border-box; }
+/* Belt-and-suspenders against any one component overflowing sideways
+   (long unbreakable text, a stray wide element) dragging the whole page
+   off-center on narrow viewports instead of just clipping that one thing. */
+html, body { max-width: 100%; overflow-x: hidden; }
 body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-serif); }
 a { color: var(--accent); }
 a:hover { color: var(--accent); }

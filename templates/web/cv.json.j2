@@ -32,6 +32,7 @@
             {
               "title": {{ e.title|tojson }},
               "date": {{ e.date|tojson }},
+              "date_range": {{ (daterange(e.start, e.end) or (e.date|year))|tojson }},
               "detail": {{ (e.journal or e.event or e.institution or e.organization or e.awarding_body or e.degree or "")|tojson }},
               "authors": {{ (e.authors or "")|tojson }},
               "arxiv": {{ (e.arxiv or "")|tojson }},
