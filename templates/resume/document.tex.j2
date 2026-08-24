@@ -33,6 +33,14 @@
 
 \hypersetup{pdftitle={\VAR{person.name|tex} — Résumé}, pdfauthor={\VAR{person.name|tex}}}
 
+% See templates/cv/document.tex.j2 for why: hyperref needs a plain-text
+% stand-in for these icon glyphs when building PDF strings.
+\pdfstringdefDisableCommands{%
+  \def\faEnvelope{[email]}%
+  \def\faGlobe{[web]}%
+  \def\aiOrcid{[orcid]}%
+}
+
 \begin{document}
 \small
 

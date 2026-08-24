@@ -33,6 +33,16 @@
 \hypersetup{pdftitle={\VAR{person.name|tex} — Curriculum Vitae},
             pdfauthor={\VAR{person.name|tex}}}
 
+% hyperref builds PDF strings (bookmarks, link destinations) from href
+% content; the icon glyphs below aren't representable there, so give it
+% a plain-text stand-in instead of erroring on the icon font.
+\pdfstringdefDisableCommands{%
+  \def\faEnvelope{[email]}%
+  \def\faGlobe{[web]}%
+  \def\aiOrcid{[orcid]}%
+  \def\aiInspire{[inspire]}%
+}
+
 \begin{document}
 
 \BLOCK{if photo}
