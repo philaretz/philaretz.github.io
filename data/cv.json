@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-22T17:00:00Z",
-  "source": "Notion CV databases 1-9, seeded 2026-08-22",
+  "generated": "2026-08-24T07:45:26Z",
+  "source": "Notion CV databases 1-9",
   "person": {
     "name": "Philipp Benjamin Aretz",
     "short_name": "P. B. Aretz",
@@ -11,12 +11,13 @@
     "website": "https://philaretz.github.io",
     "orcid": "0009-0002-9249-816X",
     "inspire_bai": "Philipp.Aretz.1",
-    "inspire_recid": 2967323
+    "inspire_recid": 2967323,
+    "github": "philaretz"
   },
   "publications": [
     {
       "key": "arXiv:2607.07788",
-      "title": "Factorization of elastic, single, and double diffractive pp scattering",
+      "title": "Factorization of elastic, single, and double diffractive $pp$ scattering",
       "slug": "Diffraction",
       "authors": "P. B. Aretz, K. Lee, S. T. Schindler, I. W. Stewart",
       "arxiv": "2607.07788",
@@ -46,7 +47,7 @@
       "arxiv": "2508.01787",
       "primary_class": "math-ph",
       "doi": "https://doi.org/10.1007/s10955-026-03583-5",
-      "journal": "J. Stat. Phys. 193 (2026) 28",
+      "journal": "J.Statist.Phys. 193 (2026) 28",
       "status": "Published",
       "date": "2025-08-03",
       "source": "inspire",
@@ -89,18 +90,18 @@
   ],
   "talks": [
     {
-      "key": "talk-scet2026",
-      "title": "Diffraction Across Colliders",
-      "slug": "diffraction-across-colliders-scet",
-      "event": "SCET 2026",
-      "kind": "Contributed talk",
+      "key": "talk-3c5369dd",
+      "title": "Diffraction at the LHC",
+      "slug": "diffraction-at-the-lhc",
+      "event": "ESI - New Paradigms for Harnessing Quantum Field Theory at Colliders",
+      "kind": "Poster",
       "scope": "International",
-      "institution": "KIAS",
-      "location": "Seoul, South Korea",
-      "date": "2026-03-01",
+      "institution": "Erwin Schrödinger Institute",
+      "location": "Vienna",
+      "date": "2026-08-12",
       "slides": null,
       "recording": null,
-      "abstract": "Factorization of diffraction and universality across colliders.",
+      "abstract": "Poster Presentation at the ESI workshop: “New Paradigms for harnessing QFT at Colliders”",
       "rank": null,
       "flags": {
         "cv": true,
@@ -109,38 +110,78 @@
       }
     },
     {
-      "key": "talk-hp2026",
-      "title": "Signal of ...",
-      "slug": "hp2026-incomplete",
-      "event": "Hard Probes 2026",
-      "kind": "Contributed talk",
-      "scope": "International",
-      "institution": null,
-      "location": null,
-      "date": null,
+      "key": "talk-3c5369dd",
+      "title": "Generalised Detectors in Heavy Ion Collisions",
+      "slug": "generalised-detectors-in-heavy-ion-collisions",
+      "event": "ESI - New Paradigms for Harnessing Quantum Field Theory at Colliders",
+      "kind": "Poster",
+      "scope": null,
+      "institution": "Erwin Schrödinger Institute",
+      "location": "Vienna",
+      "date": "2026-08-05",
       "slides": null,
       "recording": null,
-      "abstract": "",
+      "abstract": "Poster presentation at the ESI Workshops “New Paradigms for harnessing QFT at Colliders”",
       "rank": null,
       "flags": {
-        "cv": false,
-        "resume": false,
-        "web": false
+        "cv": true,
+        "resume": true,
+        "web": true
       }
     },
     {
-      "key": "talk-gss-2026-02",
-      "title": "Diffraction across Colliders",
-      "slug": "diffraction-across-colliders-mit-seminar",
-      "event": null,
+      "key": "talk-3c5369dd",
+      "title": "Diffraction Across Colliders",
+      "slug": "diffraction-across-colliders",
+      "event": "TASI - Exploring Fundamental Physics from Colliders to the Cosmos",
       "kind": "Contributed talk",
+      "scope": "National",
+      "institution": "University of Boulder",
+      "location": "Boulder",
+      "date": "2026-06-17",
+      "slides": null,
+      "recording": null,
+      "abstract": "Short student talk at TASI2026",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": true
+      }
+    },
+    {
+      "key": "talk-3c4369dd",
+      "title": "Diffraction Across Colliders",
+      "slug": "diffraction-across-colliders",
+      "event": "SCET 2026",
+      "kind": "Contributed talk",
+      "scope": "International",
+      "institution": "KIAS",
+      "location": "Seoul, South Korea",
+      "date": "2026-03-01",
+      "slides": null,
+      "recording": null,
+      "abstract": "20 + 10 Minute Slide Talk",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": true
+      }
+    },
+    {
+      "key": "talk-3c4369dd",
+      "title": "Diffraction across Colliders",
+      "slug": "diffraction-across-colliders",
+      "event": null,
+      "kind": "Outreach",
       "scope": "Institutional",
       "institution": "MIT Graduate Student Seminar",
       "location": "Cambridge, MA, USA",
       "date": "2026-02-01",
       "slides": null,
       "recording": null,
-      "abstract": "Factorization structures in diffraction and how universality can be leveraged across collider environments.",
+      "abstract": "General Introduction to Diffraction aimed at other Graduate Students",
       "rank": null,
       "flags": {
         "cv": true,
@@ -149,18 +190,38 @@
       }
     },
     {
-      "key": "talk-gss-2025-11",
-      "title": "An Introduction to Diffraction",
-      "slug": "an-introduction-to-diffraction",
+      "key": "talk-3c5369dd",
+      "title": "Diffraction at the LHC",
+      "slug": "diffraction-at-the-lhc",
+      "event": "GGI School on Theory of Fundamental Interactions",
+      "kind": "Outreach",
+      "scope": "International",
+      "institution": "GGI",
+      "location": "Florence, Italy",
+      "date": "2026-01-21",
+      "slides": null,
+      "recording": null,
+      "abstract": "Elevator Pitch at GGI",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": true
+      }
+    },
+    {
+      "key": "talk-3c4369dd",
+      "title": "EFT for Collider Physics",
+      "slug": "eft-for-collider-physics",
       "event": null,
-      "kind": "Contributed talk",
+      "kind": "Outreach",
       "scope": "Institutional",
       "institution": "MIT Graduate Student Seminar",
       "location": "Cambridge, MA, USA",
       "date": "2025-11-01",
       "slides": null,
       "recording": null,
-      "abstract": "",
+      "abstract": "General Introduction to EFT methods used in collider Physics",
       "rank": null,
       "flags": {
         "cv": true,
@@ -169,9 +230,9 @@
       }
     },
     {
-      "key": "talk-eft-2025-10",
+      "key": "talk-3c4369dd",
       "title": "Generalised Detector Observables in the Heavy Ion Environment",
-      "slug": "generalised-detector-observables-eft-2025-10",
+      "slug": "generalised-detector-observables-in-the-heavy-ion-environmen",
       "event": null,
       "kind": "Group meeting",
       "scope": "Internal",
@@ -189,7 +250,7 @@
       }
     },
     {
-      "key": "talk-eft-2025-05",
+      "key": "talk-3c4369dd",
       "title": "Resurgence and Renormalons in QCD",
       "slug": "resurgence-and-renormalons-in-qcd",
       "event": null,
@@ -209,9 +270,9 @@
       }
     },
     {
-      "key": "talk-hi-2025-04",
+      "key": "talk-3c4369dd",
       "title": "Generalised Detector Observables in the Heavy Ion Environment",
-      "slug": "generalised-detector-observables-hi-2025-04",
+      "slug": "generalised-detector-observables-in-the-heavy-ion-environmen",
       "event": null,
       "kind": "Group meeting",
       "scope": "Internal",
@@ -231,8 +292,14 @@
   ],
   "education": [
     {
-      "key": "edu-mit",
-      "title": "MIT",
+      "key": "institution-3c4369dd",
+      "title": "Massachusetts Institute of Technology",
+      "rank": 10,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": true
+      },
       "institution": "Massachusetts Institute of Technology",
       "degree": "PhD",
       "field": "Physics",
@@ -242,17 +309,17 @@
       "thesis": null,
       "advisor": null,
       "location": "Cambridge, MA, USA",
-      "date": "2024-09-01",
-      "rank": 10,
+      "date": "2024-09-01"
+    },
+    {
+      "key": "institution-3c4369dd",
+      "title": "University of Cambridge",
+      "rank": 20,
       "flags": {
         "cv": true,
         "resume": true,
         "web": true
-      }
-    },
-    {
-      "key": "edu-cambridge",
-      "title": "Cambridge",
+      },
       "institution": "University of Cambridge",
       "degree": "MASt",
       "field": "Mathematics (Part III)",
@@ -262,17 +329,17 @@
       "thesis": null,
       "advisor": null,
       "location": "Cambridge, UK",
-      "date": "2023-10-01",
-      "rank": 20,
+      "date": "2023-10-01"
+    },
+    {
+      "key": "institution-3c4369dd",
+      "title": "Heidelberg University",
+      "rank": 30,
       "flags": {
         "cv": true,
         "resume": true,
         "web": true
-      }
-    },
-    {
-      "key": "edu-heidelberg",
-      "title": "Heidelberg",
+      },
       "institution": "Heidelberg University",
       "degree": "BSc",
       "field": "Physics",
@@ -282,17 +349,17 @@
       "thesis": "The Keldysh Functional Integral and Bounds on Truncated Expectation Values",
       "advisor": "Prof. Manfred Salmhofer",
       "location": "Heidelberg, Germany",
-      "date": "2020-10-01",
-      "rank": 30,
-      "flags": {
-        "cv": true,
-        "resume": true,
-        "web": true
-      }
+      "date": "2020-10-01"
     },
     {
-      "key": "edu-abitur",
-      "title": "Abitur",
+      "key": "institution-3c4369dd",
+      "title": "Goethe-Schule Bochum",
+      "rank": 40,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": false
+      },
       "institution": "Goethe-Schule Bochum",
       "degree": "Abitur",
       "field": null,
@@ -302,19 +369,19 @@
       "thesis": null,
       "advisor": null,
       "location": "Bochum, Germany",
-      "date": "2020-06-30",
-      "rank": 40,
-      "flags": {
-        "cv": true,
-        "resume": false,
-        "web": false
-      }
+      "date": null
     }
   ],
   "positions": [
     {
-      "key": "pos-trr191",
+      "key": "role-3c4369dd",
       "title": "Research Assistant",
+      "rank": 10,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": false
+      },
       "role": "Research Assistant",
       "organization": "Heidelberg University",
       "group": "CRC/TRR 191 Symplectic Structures in Geometry, Algebra and Dynamics",
@@ -322,17 +389,17 @@
       "end": "2023-09-30",
       "location": "Heidelberg, Germany",
       "description": "Differential delay equations: periodic delay orbits and smooth orbit families. Magnetic billiards: KAM-based extension near convex boundaries.",
-      "date": "2022-04-01",
-      "rank": 10,
-      "flags": {
-        "cv": true,
-        "resume": true,
-        "web": false
-      }
+      "date": "2022-04-01"
     },
     {
-      "key": "pos-tutor",
+      "key": "role-3c4369dd",
       "title": "Tutor",
+      "rank": 20,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": false
+      },
       "role": "Tutor",
       "organization": "Heidelberg University",
       "group": null,
@@ -340,17 +407,17 @@
       "end": "2022-02-28",
       "location": "Heidelberg, Germany",
       "description": null,
-      "date": "2021-10-01",
-      "rank": 20,
-      "flags": {
-        "cv": true,
-        "resume": false,
-        "web": false
-      }
+      "date": "2021-10-01"
     },
     {
-      "key": "pos-consulting",
+      "key": "role-3c4369dd",
       "title": "Financial Consulting Intern",
+      "rank": 30,
+      "flags": {
+        "cv": false,
+        "resume": false,
+        "web": false
+      },
       "role": "Financial Consulting Intern",
       "organization": "Kartak & Partner",
       "group": null,
@@ -358,250 +425,295 @@
       "end": "2021-05-31",
       "location": "Germany",
       "description": null,
-      "date": "2021-04-01",
-      "rank": 30,
-      "flags": {
-        "cv": false,
-        "resume": false,
-        "web": false
-      }
+      "date": "2021-04-01"
     }
   ],
   "awards": [
     {
-      "key": "award-tomfrank",
-      "title": "Tom Frank Fellowship",
-      "awarding_body": "Massachusetts Institute of Technology",
-      "kind": "Fellowship",
-      "year": 2024,
-      "date": "2024-01-01",
-      "rank": 10,
-      "flags": {
-        "cv": true,
-        "resume": true,
-        "web": true
-      }
-    },
-    {
-      "key": "award-jennings",
+      "key": "name-3c4369dd",
       "title": "Jennings Prize",
-      "awarding_body": "University of Cambridge",
-      "kind": "Prize",
-      "year": 2024,
-      "date": "2024-01-01",
       "rank": 20,
       "flags": {
         "cv": true,
         "resume": true,
         "web": true
-      }
+      },
+      "awarding_body": "University of Cambridge",
+      "kind": "Prize",
+      "year": 2024,
+      "date": "2024-01-01"
     },
     {
-      "key": "award-daad",
+      "key": "name-3c4369dd",
+      "title": "Tom Frank Fellowship",
+      "rank": 10,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": true
+      },
+      "awarding_body": "Massachusetts Institute of Technology",
+      "kind": "Fellowship",
+      "year": 2024,
+      "date": "2024-01-01"
+    },
+    {
+      "key": "name-3c4369dd",
       "title": "DAAD Scholarship",
-      "awarding_body": "Deutscher Akademischer Austauschdienst",
-      "kind": "Scholarship",
-      "year": 2023,
-      "date": "2023-01-01",
       "rank": 30,
       "flags": {
         "cv": true,
         "resume": true,
         "web": false
-      }
-    },
-    {
-      "key": "award-wolfson",
-      "title": "Wolfson College Scholarship",
-      "awarding_body": "Wolfson College, Cambridge",
+      },
+      "awarding_body": "Deutscher Akademischer Austauschdienst",
       "kind": "Scholarship",
       "year": 2023,
-      "date": "2023-01-01",
+      "date": "2023-01-01"
+    },
+    {
+      "key": "name-3c4369dd",
+      "title": "Wolfson College Scholarship",
       "rank": 40,
       "flags": {
         "cv": true,
         "resume": false,
         "web": false
-      }
+      },
+      "awarding_body": "Wolfson College, Cambridge",
+      "kind": "Scholarship",
+      "year": 2023,
+      "date": "2023-01-01"
     },
     {
-      "key": "award-efellows",
+      "key": "name-3c4369dd",
       "title": "e-fellows.net Scholarship",
-      "awarding_body": null,
-      "kind": "Scholarship",
-      "year": null,
-      "date": null,
       "rank": 50,
       "flags": {
         "cv": true,
         "resume": false,
         "web": false
-      }
+      },
+      "awarding_body": null,
+      "kind": "Scholarship",
+      "year": null
     }
   ],
-  "teaching": [],
+  "teaching": [
+    {
+      "key": "course-3c5369dd",
+      "title": "Classical Mechanics 8.01",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": true
+      },
+      "role": "TA",
+      "institution": "MIT",
+      "term": "Fall",
+      "level": "Undergraduate",
+      "start": "2026-09-03",
+      "end": "2026-12-21",
+      "date": "2026-09-03"
+    },
+    {
+      "key": "course-3c5369dd",
+      "title": "Classical Mechanics 8.01",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": true
+      },
+      "role": "TA",
+      "institution": "MIT",
+      "term": "Fall",
+      "level": "Undergraduate",
+      "start": "2025-09-03",
+      "end": "2025-12-21",
+      "date": "2025-09-03"
+    },
+    {
+      "key": "course-3c5369dd",
+      "title": "Basiskurs",
+      "rank": null,
+      "flags": {
+        "cv": false,
+        "resume": false,
+        "web": true
+      },
+      "role": "Tutor",
+      "institution": "Heidelberg University",
+      "term": "Fall/Spring",
+      "level": "Undergraduate",
+      "start": "2021-10-01",
+      "end": "2022-02-01",
+      "date": "2021-10-01"
+    }
+  ],
   "service": [
     {
-      "key": "svc-edgerton",
+      "key": "role-3c4369dd",
+      "title": "President MIT Rowing Club",
+      "rank": 20,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": false
+      },
+      "role": "President MIT Rowing Club",
+      "organization": "MIT Rowing Club",
+      "start": "2026-04-01",
+      "end": null,
+      "description": null,
+      "date": "2026-04-01"
+    },
+    {
+      "key": "role-3c4369dd",
       "title": "Treasurer",
+      "rank": 10,
+      "flags": {
+        "cv": true,
+        "resume": true,
+        "web": false
+      },
       "role": "Treasurer",
       "organization": "Edgerton House, MIT",
       "start": "2025-05-01",
       "end": "2026-05-31",
       "description": null,
-      "date": "2025-05-01",
-      "rank": 10,
-      "flags": {
-        "cv": true,
-        "resume": true,
-        "web": false
-      }
+      "date": "2025-05-01"
     },
     {
-      "key": "svc-rowing",
-      "title": "President",
-      "role": "President",
-      "organization": "MIT Rowing Club",
-      "start": null,
-      "end": null,
-      "description": null,
-      "date": null,
-      "rank": 20,
-      "flags": {
-        "cv": true,
-        "resume": true,
-        "web": false
-      }
-    },
-    {
-      "key": "svc-fys",
+      "key": "role-3c4369dd",
       "title": "Organiser, First Year Seminar",
-      "role": "Organiser, First Year Seminar",
-      "organization": "Massachusetts Institute of Technology",
-      "start": "2024-09-01",
-      "end": "2025-05-31",
-      "description": null,
-      "date": "2024-09-01",
       "rank": 30,
       "flags": {
         "cv": true,
         "resume": true,
         "web": false
-      }
+      },
+      "role": "Organiser, First Year Seminar",
+      "organization": "Massachusetts Institute of Technology",
+      "start": "2024-09-01",
+      "end": "2025-05-31",
+      "description": null,
+      "date": "2024-09-01"
     },
     {
-      "key": "svc-buddy",
+      "key": "role-3c4369dd",
       "title": "Buddy for first-year students",
-      "role": "Buddy for first-year students",
-      "organization": "Heidelberg University",
-      "start": "2021-10-01",
-      "end": "2022-09-30",
-      "description": null,
-      "date": "2021-10-01",
       "rank": 40,
       "flags": {
         "cv": true,
         "resume": false,
         "web": false
-      }
+      },
+      "role": "Buddy for first-year students",
+      "organization": "Heidelberg University",
+      "start": "2021-10-01",
+      "end": "2022-09-30",
+      "description": null,
+      "date": "2021-10-01"
     },
     {
-      "key": "svc-ski",
+      "key": "role-3c4369dd",
       "title": "Ski instructor",
-      "role": "Ski instructor",
-      "organization": null,
-      "start": "2018-01-01",
-      "end": "2022-12-31",
-      "description": null,
-      "date": "2018-01-01",
       "rank": 50,
       "flags": {
         "cv": false,
         "resume": false,
         "web": false
-      }
+      },
+      "role": "Ski instructor",
+      "organization": null,
+      "start": "2018-01-01",
+      "end": "2022-12-31",
+      "description": null,
+      "date": "2018-01-01"
     }
   ],
   "meetings": [
     {
-      "key": "mtg-scet2026",
-      "title": "SCET 2026",
-      "kind": "Conference",
-      "location": "Seoul, South Korea",
-      "start": "2026-03-01",
-      "end": null,
-      "date": "2026-03-01",
-      "contribution": "Talk",
+      "key": "name-3c5369dd",
+      "title": "ESI - New Paradigms for Harnessing Quantum Field Theory at Colliders",
       "rank": null,
       "flags": {
         "cv": true,
         "resume": false,
         "web": true
-      }
+      },
+      "kind": "Workshop",
+      "location": "Erwin Schrödinger Institute - Vienna",
+      "start": "2026-08-02",
+      "end": "2026-08-15",
+      "contribution": "Poster",
+      "date": "2026-08-02"
     },
     {
-      "key": "mtg-scet2025",
-      "title": "SCET 2025",
-      "kind": "Conference",
-      "location": null,
-      "start": null,
-      "end": null,
-      "date": "2025-01-01",
-      "contribution": "Attended",
+      "key": "name-3c4369dd",
+      "title": "TASI - Exploring Fundamental Physics from Colliders to the Cosmos",
       "rank": null,
       "flags": {
         "cv": true,
         "resume": false,
-        "web": false
-      }
-    },
-    {
-      "key": "mtg-hp2026",
-      "title": "Hard Probes 2026",
-      "kind": "Conference",
-      "location": null,
-      "start": null,
-      "end": null,
-      "date": null,
-      "contribution": "Attended",
-      "rank": null,
-      "flags": {
-        "cv": false,
-        "resume": false,
-        "web": false
-      }
-    },
-    {
-      "key": "mtg-ggi",
-      "title": "GGI School on Theory of Fundamental Interactions",
-      "kind": "School",
-      "location": "Florence, Italy",
-      "start": null,
-      "end": null,
-      "date": null,
-      "contribution": "Attended",
-      "rank": null,
-      "flags": {
-        "cv": true,
-        "resume": false,
-        "web": false
-      }
-    },
-    {
-      "key": "mtg-tasi",
-      "title": "TASI",
+        "web": true
+      },
       "kind": "School",
       "location": "Boulder, CO, USA",
-      "start": null,
-      "end": null,
-      "date": null,
+      "start": "2026-06-01",
+      "end": "2026-06-27",
       "contribution": "Attended",
+      "date": "2026-06-01"
+    },
+    {
+      "key": "name-3c4369dd",
+      "title": "SCET 2026",
       "rank": null,
       "flags": {
-        "cv": false,
+        "cv": true,
         "resume": false,
-        "web": false
-      }
+        "web": true
+      },
+      "kind": "Conference",
+      "location": "Seoul, South Korea",
+      "start": "2026-02-26",
+      "end": "2026-03-05",
+      "contribution": "Talk",
+      "date": "2026-02-26"
+    },
+    {
+      "key": "name-3c4369dd",
+      "title": "GGI School on Theory of Fundamental Interactions",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": true
+      },
+      "kind": "School",
+      "location": "Florence, Italy",
+      "start": "2026-01-11",
+      "end": "2026-01-31",
+      "contribution": "Attended",
+      "date": "2026-01-11"
+    },
+    {
+      "key": "name-3c4369dd",
+      "title": "SCET 2025",
+      "rank": null,
+      "flags": {
+        "cv": true,
+        "resume": false,
+        "web": true
+      },
+      "kind": "Conference",
+      "location": "Tucson, AZ, USA",
+      "start": "2025-03-10",
+      "end": "2025-03-13",
+      "contribution": "Attended",
+      "date": "2025-03-10"
     }
   ],
   "sections": [
@@ -704,21 +816,6 @@
       "body": null
     },
     {
-      "title": "Departmental and institutional seminars",
-      "targets": [
-        "cv"
-      ],
-      "order": 55,
-      "source": "talks",
-      "filter": "scope == \"Institutional\"",
-      "group_by": "none",
-      "sort": "date desc",
-      "partial": "partials/talk",
-      "heading_style": "section",
-      "show_if_empty": false,
-      "body": null
-    },
-    {
       "title": "Contributed conference talks",
       "targets": [
         "cv",
@@ -727,7 +824,7 @@
       ],
       "order": 60,
       "source": "talks",
-      "filter": "kind in (\"Contributed talk\", \"Poster\") and scope in (\"International\", \"National\")",
+      "filter": "kind in (\"Contributed talk\", \"Poster\") and scope != \"Internal\"",
       "group_by": "none",
       "sort": "date desc",
       "partial": "partials/talk",

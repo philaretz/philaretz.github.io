@@ -1,5 +1,5 @@
 ---
-title: "Factorization of elastic, single, and double diffractive pp scattering"
+title: "Factorization of elastic, single, and double diffractive $pp$ scattering"
 collection: publications
 category: preprints
 permalink: /publication/Diffraction

@@ -20,8 +20,10 @@
             <div class="cv-date">{{ entry.date | date: "%Y" }}</div>
             <div>
               <p class="cv-title">{{ entry.title }}</p>
-              {% if entry.detail != "" or entry.authors != "" %}
-                <p class="cv-sub">{{ entry.detail }}{% if entry.authors != "" %}{% if entry.detail != "" %} &middot; {% endif %}{{ entry.authors }}{% endif %}</p>
+              {% assign show_detail = false %}
+              {% if entry.detail != "" and entry.detail != entry.title %}{% assign show_detail = true %}{% endif %}
+              {% if show_detail or entry.authors != "" %}
+                <p class="cv-sub">{% if show_detail %}{{ entry.detail }}{% endif %}{% if entry.authors != "" %}{% if show_detail %} &middot; {% endif %}{{ entry.authors }}{% endif %}</p>
               {% endif %}
             </div>
           </div>
