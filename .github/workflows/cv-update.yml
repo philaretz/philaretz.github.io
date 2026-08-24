@@ -62,6 +62,17 @@ jobs:
             tex-gyre
             latexmk
 
+      # install-tl doesn't register its fonts with Linux's fontconfig the
+      # way a distro package's postinst script would — fontspec/xetex use
+      # fontconfig to resolve font names on Linux, so without this step
+      # \setmainfont{TeX Gyre Pagella} can't find a font that is, in fact,
+      # sitting right there on disk.
+      - name: Register TeX Live fonts with fontconfig
+        run: |
+          tlmgr generate fontconfig
+          sudo cp "$(kpsewhich texlive-fontconfig.conf)" /etc/fonts/conf.d/09-texlive-fonts.conf
+          fc-cache -fv
+
       - name: Install poppler-utils
         run: sudo apt-get update && sudo apt-get install -y --no-install-recommends poppler-utils
 
