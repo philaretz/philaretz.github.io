@@ -24,8 +24,14 @@ Research Themes
 
 Publications
 =====
-* [A rigorous Keldysh functional integral for fermions](/publication/Keldysh), *Journal of Statistical Physics* 193(2), 28 (2026)
-* [Families of periodic delay orbits](/publication/Periodic), *Journal of Differential Equations* 410, 228-250 (2024)
+{% assign pubs_sorted = site.publications | sort: "date" | reverse %}
+{% if pubs_sorted.size > 0 %}
+<ul>
+{% for pub in pubs_sorted %}
+  <li><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>, {{ pub.venue }} ({{ pub.date | date: "%Y" }})</li>
+{% endfor %}
+</ul>
+{% endif %}
 
 Selected Talks
 ======
