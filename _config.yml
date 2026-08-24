@@ -33,7 +33,7 @@ author:
 
   # Academic websites
   academia         : # URL
-  arxiv            : https://arxiv.org/a/aretz_p_1 # arXiv author page, all archives
+  arxiv            : https://arxiv.org/search/?searchtype=author&query=Aretz,+P # all-archive author search
   googlescholar    : https://scholar.google.com/citations?user=0q9qzPUAAAAJ&hl=en #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : https://inspirehep.net/authors/2967323
   impactstory      : # URL

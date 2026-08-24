@@ -8,7 +8,7 @@
     "profiles": [
       {"network": "ORCID", "url": "https://orcid.org/0009-0002-9249-816X"},
       {"network": "INSPIRE-HEP", "url": "https://inspirehep.net/authors/2967323"},
-      {"network": "arXiv", "url": "https://arxiv.org/a/aretz_p_1"}
+      {"network": "arXiv", "url": "https://arxiv.org/search/?searchtype=author&query=Aretz,+P"}
     ]
   },
   "generated": "2026-08-24T07:45:26Z",
