@@ -11,7 +11,7 @@
       {"network": "arXiv", "url": "https://arxiv.org/search/?searchtype=author&query=Aretz,+P"}
     ]
   },
-  "generated": "2026-08-24T12:56:20Z",
+  "generated": "2026-08-24T13:11:24Z",
   "sections": [
     {
       "title": "Education",
@@ -120,28 +120,10 @@
               "url": ""
             },
             {
-              "title": "Diffraction across Colliders",
-              "date": "2026-02-01",
-              "date_range": "2026",
-              "detail": "MIT Graduate Student Seminar",
-              "authors": "",
-              "arxiv": "",
-              "url": ""
-            },
-            {
               "title": "Diffraction at the LHC",
               "date": "2026-01-21",
               "date_range": "2026",
               "detail": "GGI School on Theory of Fundamental Interactions",
-              "authors": "",
-              "arxiv": "",
-              "url": ""
-            },
-            {
-              "title": "EFT for Collider Physics",
-              "date": "2025-11-01",
-              "date_range": "2025",
-              "detail": "MIT Graduate Student Seminar",
               "authors": "",
               "arxiv": "",
               "url": ""
@@ -181,6 +163,24 @@
           "label": null,
           "entries": [
             {
+              "title": "Diffraction across Colliders",
+              "date": "2026-02-01",
+              "date_range": "2026",
+              "detail": "MIT Graduate Student Seminar",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            },
+            {
+              "title": "EFT for Collider Physics",
+              "date": "2025-11-01",
+              "date_range": "2025",
+              "detail": "MIT Graduate Student Seminar",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            },
+            {
               "title": "Generalised Detector Observables in the Heavy Ion Environment",
               "date": "2025-10-01",
               "date_range": "2025",
@@ -219,19 +219,28 @@
           "label": null,
           "entries": [
             {
-              "title": "Tom Frank Fellowship",
+              "title": "Jennings Prize",
               "date": "2024-01-01",
               "date_range": "2024",
-              "detail": "Massachusetts Institute of Technology",
+              "detail": "University of Cambridge",
               "authors": "",
               "arxiv": "",
               "url": ""
             },
             {
-              "title": "Jennings Prize",
-              "date": "2024-01-01",
-              "date_range": "2024",
-              "detail": "University of Cambridge",
+              "title": "DAAD Scholarship",
+              "date": "2023-01-01",
+              "date_range": "2023",
+              "detail": "Deutscher Akademischer Austauschdienst",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            },
+            {
+              "title": "Wolfson College Scholarship",
+              "date": "2023-01-01",
+              "date_range": "2023",
+              "detail": "Wolfson College, Cambridge",
               "authors": "",
               "arxiv": "",
               "url": ""

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T12:56:20Z",
+  "generated": "2026-08-24T13:11:24Z",
   "source": "Notion CV databases 1-9",
   "person": {
     "name": "Philipp Benjamin Aretz",
@@ -175,7 +175,7 @@
       "slug": "diffraction-across-colliders",
       "event": null,
       "kind": "Outreach",
-      "scope": "Institutional",
+      "scope": "Internal",
       "institution": "MIT Graduate Student Seminar",
       "location": "Cambridge, MA, USA",
       "date": "2026-02-01",
@@ -215,7 +215,7 @@
       "slug": "eft-for-collider-physics",
       "event": null,
       "kind": "Outreach",
-      "scope": "Institutional",
+      "scope": "Internal",
       "institution": "MIT Graduate Student Seminar",
       "location": "Cambridge, MA, USA",
       "date": "2025-11-01",
@@ -448,9 +448,9 @@
       "title": "Tom Frank Fellowship",
       "rank": 10,
       "flags": {
-        "cv": true,
-        "resume": true,
-        "web": true
+        "cv": false,
+        "resume": false,
+        "web": false
       },
       "awarding_body": "Massachusetts Institute of Technology",
       "kind": "Fellowship",
@@ -464,7 +464,7 @@
       "flags": {
         "cv": true,
         "resume": true,
-        "web": false
+        "web": true
       },
       "awarding_body": "Deutscher Akademischer Austauschdienst",
       "kind": "Scholarship",
@@ -477,8 +477,8 @@
       "rank": 40,
       "flags": {
         "cv": true,
-        "resume": false,
-        "web": false
+        "resume": true,
+        "web": true
       },
       "awarding_body": "Wolfson College, Cambridge",
       "kind": "Scholarship",
@@ -490,7 +490,7 @@
       "title": "e-fellows.net Scholarship",
       "rank": 50,
       "flags": {
-        "cv": true,
+        "cv": false,
         "resume": false,
         "web": false
       },
