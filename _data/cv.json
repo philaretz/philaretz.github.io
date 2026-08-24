@@ -11,7 +11,7 @@
       {"network": "arXiv", "url": "https://arxiv.org/search/?searchtype=author&query=Aretz,+P"}
     ]
   },
-  "generated": "2026-08-24T07:45:26Z",
+  "generated": "2026-08-24T12:56:20Z",
   "sections": [
     {
       "title": "Education",
@@ -95,11 +95,61 @@
       ]
     },
     {
-      "title": "Contributed conference talks",
+      "title": "Talks",
       "kind": "entries",
       "groups": [
         {
-          "label": null,
+          "label": "Conference Talks",
+          "entries": [
+            {
+              "title": "Diffraction Across Colliders",
+              "date": "2026-06-17",
+              "date_range": "2026",
+              "detail": "TASI - Exploring Fundamental Physics from Colliders to the Cosmos",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            },
+            {
+              "title": "Diffraction Across Colliders",
+              "date": "2026-03-01",
+              "date_range": "2026",
+              "detail": "SCET 2026",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            },
+            {
+              "title": "Diffraction across Colliders",
+              "date": "2026-02-01",
+              "date_range": "2026",
+              "detail": "MIT Graduate Student Seminar",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            },
+            {
+              "title": "Diffraction at the LHC",
+              "date": "2026-01-21",
+              "date_range": "2026",
+              "detail": "GGI School on Theory of Fundamental Interactions",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            },
+            {
+              "title": "EFT for Collider Physics",
+              "date": "2025-11-01",
+              "date_range": "2025",
+              "detail": "MIT Graduate Student Seminar",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "label": "Posters",
           "entries": [
             {
               "title": "Diffraction at the LHC",
@@ -118,21 +168,41 @@
               "authors": "",
               "arxiv": "",
               "url": ""
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Internal seminars",
+      "kind": "entries",
+      "groups": [
+        {
+          "label": null,
+          "entries": [
             {
-              "title": "Diffraction Across Colliders",
-              "date": "2026-06-17",
-              "date_range": "2026",
-              "detail": "TASI - Exploring Fundamental Physics from Colliders to the Cosmos",
+              "title": "Generalised Detector Observables in the Heavy Ion Environment",
+              "date": "2025-10-01",
+              "date_range": "2025",
+              "detail": "MIT EFT Group Meeting",
               "authors": "",
               "arxiv": "",
               "url": ""
             },
             {
-              "title": "Diffraction Across Colliders",
-              "date": "2026-03-01",
-              "date_range": "2026",
-              "detail": "SCET 2026",
+              "title": "Resurgence and Renormalons in QCD",
+              "date": "2025-05-01",
+              "date_range": "2025",
+              "detail": "MIT EFT Group Meeting",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            },
+            {
+              "title": "Generalised Detector Observables in the Heavy Ion Environment",
+              "date": "2025-04-01",
+              "date_range": "2025",
+              "detail": "MIT Heavy Ions Group Meeting",
               "authors": "",
               "arxiv": "",
               "url": ""

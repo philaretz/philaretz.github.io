@@ -10,9 +10,44 @@ description: "Seminars, conference talks, and group meetings given by Philipp Ar
   <p class="page-sub">Seminars, conference talks, and group meetings.</p>
 </section>
 
-<ul class="talk-list">
 {% assign talks_sorted = site.talks | sort: "date" | reverse %}
+{% assign conference_count = 0 %}{% assign poster_count = 0 %}{% assign internal_count = 0 %}
 {% for post in talks_sorted %}
-  {% include bespoke/talk-entry.html post=post %}
+  {% if post.scope == "Internal" %}{% assign internal_count = internal_count | plus: 1 %}
+  {% elsif post.type == "Poster" %}{% assign poster_count = poster_count | plus: 1 %}
+  {% else %}{% assign conference_count = conference_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+{% if conference_count > 0 %}
+<h2 class="section-label">Conference Talks</h2>
+<ul class="talk-list" style="margin-bottom: 40px;">
+{% for post in talks_sorted %}
+  {% if post.scope != "Internal" and post.type != "Poster" %}
+    {% include bespoke/talk-entry.html post=post %}
+  {% endif %}
 {% endfor %}
 </ul>
+{% endif %}
+
+{% if poster_count > 0 %}
+<h2 class="section-label">Posters</h2>
+<ul class="talk-list" style="margin-bottom: 40px;">
+{% for post in talks_sorted %}
+  {% if post.scope != "Internal" and post.type == "Poster" %}
+    {% include bespoke/talk-entry.html post=post %}
+  {% endif %}
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if internal_count > 0 %}
+<h2 class="section-label">Internal</h2>
+<ul class="talk-list">
+{% for post in talks_sorted %}
+  {% if post.scope == "Internal" %}
+    {% include bespoke/talk-entry.html post=post %}
+  {% endif %}
+{% endfor %}
+</ul>
+{% endif %}

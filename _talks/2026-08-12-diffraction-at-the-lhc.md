@@ -2,6 +2,7 @@
 title: "Diffraction at the LHC"
 collection: talks
 type: "Poster"
+scope: "International"
 permalink: /talks/2026-08-12-diffraction-at-the-lhc
 venue: "ESI - New Paradigms for Harnessing Quantum Field Theory at Colliders"
 date: 2026-08-12

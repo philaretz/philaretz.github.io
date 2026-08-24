@@ -2,6 +2,7 @@
 title: "Diffraction Across Colliders"
 collection: talks
 type: "Contributed talk"
+scope: "International"
 permalink: /talks/2026-03-01-diffraction-across-colliders
 venue: "SCET 2026"
 date: 2026-03-01

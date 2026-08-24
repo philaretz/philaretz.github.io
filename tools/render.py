@@ -192,6 +192,21 @@ _STATUS_HEADING = {
     "In preparation": "In preparation",
 }
 
+# Talks DB's Kind values, spelled for the entry itself ("Contributed
+# talk"); these are the plural section/subsection headings a "kind"
+# grouping should show instead — kept here rather than renamed in Notion
+# so the entry-level Kind value stays intact for filters elsewhere.
+_KIND_ORDER = ["Plenary", "Invited seminar", "Contributed talk", "Poster",
+              "Group meeting", "Outreach"]
+_KIND_HEADING = {
+    "Plenary": "Plenary",
+    "Invited seminar": "Invited Seminars",
+    "Contributed talk": "Conference Talks",
+    "Poster": "Posters",
+    "Group meeting": "Group Meetings",
+    "Outreach": "Outreach",
+}
+
 
 def sort_entries(entries: list[dict], how: str | None) -> list[dict]:
     how = (how or "date desc").strip()
@@ -224,8 +239,28 @@ def group_entries(entries: list[dict], how: str | None) -> list[dict]:
             buckets.append({"label": None, "entries": rest})
         return buckets
 
-    keyfn = {"year": lambda e: year(e.get("date")),
-             "kind": lambda e: e.get("kind") or ""}[how]
+    if how == "kind":
+        buckets: dict[str, list] = {}
+        for e in entries:
+            buckets.setdefault(e.get("kind") or "", []).append(e)
+        ordered = [k for k in _KIND_ORDER if k in buckets]
+        ordered += sorted(k for k in buckets if k not in _KIND_ORDER and k)
+        out = [{"label": _KIND_HEADING.get(k, k), "entries": buckets[k]} for k in ordered]
+        if "" in buckets:
+            out.append({"label": None, "entries": buckets[""]})
+        return out
+
+    if how == "poster_or_talk":
+        posters = [e for e in entries if e.get("kind") == "Poster"]
+        talks = [e for e in entries if e.get("kind") != "Poster"]
+        out = []
+        if talks:
+            out.append({"label": "Conference Talks", "entries": talks})
+        if posters:
+            out.append({"label": "Posters", "entries": posters})
+        return out
+
+    keyfn = {"year": lambda e: year(e.get("date"))}[how]
     buckets: dict[str, list] = {}
     for e in entries:
         buckets.setdefault(keyfn(e), []).append(e)
