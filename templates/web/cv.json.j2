@@ -6,7 +6,7 @@
     "name": {{ person.name|tojson }},
     "email": {{ person.email|tojson }},
     "website": {{ person.website|tojson }},
-    "summary": {{ (cv.sections|selectattr("source", "equalto", "static")|selectattr("title", "equalto", "Research interests")|map(attribute="body")|first) or ""|tojson }},
+    "summary": {{ ((cv.sections|selectattr("source", "equalto", "static")|selectattr("title", "equalto", "Research interests")|map(attribute="body")|first) or "")|tojson }},
     "location": {"city": "Cambridge, MA", "countryCode": "US"},
     "profiles": [
       {"network": "ORCID", "url": "https://orcid.org/{{ person.orcid }}"},
