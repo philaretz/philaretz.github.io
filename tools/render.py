@@ -262,10 +262,14 @@ def group_entries(entries: list[dict], how: str | None) -> list[dict]:
 
     if how == "contributed_or_other":
         contributed = [e for e in entries if e.get("kind") == "Contributed talk"]
-        other = [e for e in entries if e.get("kind") != "Contributed talk"]
+        posters = [e for e in entries if e.get("kind") == "Poster"]
+        other = [e for e in entries
+                 if e.get("kind") not in ("Contributed talk", "Poster")]
         out = []
         if contributed:
             out.append({"label": "Conference Talks", "entries": contributed})
+        if posters:
+            out.append({"label": "Posters", "entries": posters})
         if other:
             out.append({"label": "Other Talks", "entries": other})
         return out
