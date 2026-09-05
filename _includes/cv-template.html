@@ -11,7 +11,7 @@
     <div class="cv-contact">
       {% if cv.basics.email %}
       <div class="cv-contact-item">
-        <i class="fas fa-envelope"></i> {{ site.data.contact.email_obfuscated_mdtext }}
+        <i class="fas fa-envelope"></i> {% include bespoke/email-link.html id="cv-json-email" class="cv-json-email-link" %}
       </div>
       {% endif %}
       

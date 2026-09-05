@@ -1,0 +1,19 @@
+{% comment %}
+  Renders a mailto link whose address is assembled by JavaScript at
+  view time from site.data.contact's two fragments, rather than being
+  written into the page as a literal address (in text or in a mailto:
+  href) for a scraper to lift. Requires a page-unique id.
+  Usage: {% include bespoke/email-link.html id="contact-email" class="contact-email" %}
+{% endcomment %}
+<a href="#" class="{{ include.class }}" id="{{ include.id }}" rel="nofollow">Loading&hellip;</a>
+<script>
+(function () {
+  var a = document.getElementById({{ include.id | jsonify }});
+  if (!a) return;
+  var u = {{ site.data.contact.email_user | jsonify }};
+  var d = {{ site.data.contact.email_domain | jsonify }};
+  var addr = u + '@' + d;
+  a.href = 'mailto:' + addr;
+  a.textContent = addr;
+})();
+</script>
