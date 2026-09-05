@@ -1,25 +1,17 @@
 {
-  "name": "academic-pages",
-  "version": "0.8.1.1",
-  "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
+  "name": "philaretz.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal academic site for Philipp Aretz — npm build scripts for the site's JS bundle (forked from Academic Pages / Minimal Mistakes)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/academicpages/academicpages.github.io"
+    "url": "https://github.com/philaretz/philaretz.github.io"
   },
-  "keywords": [
-    "jekyll",
-    "theme",
-    "minimal"
-  ],
-  "contributors": [
-    "Michael Rose",
-    "Robert Zupko"
-  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/academicpages/academicpages.github.io/issues"
+    "url": "https://github.com/philaretz/philaretz.github.io/issues"
   },
-  "homepage": "https://github.com/academicpages/academicpages.github.io",
+  "homepage": "https://philaretz.github.io",
   "engines": {
     "node": ">= 0.10.0"
   },
