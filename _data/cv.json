@@ -11,7 +11,7 @@
       {"network": "arXiv", "url": "https://arxiv.org/search/?searchtype=author&query=Aretz,+P"}
     ]
   },
-  "generated": "2026-09-05T17:43:42Z",
+  "generated": "2026-09-05T18:05:35Z",
   "sections": [
     {
       "title": "Education",
@@ -112,27 +112,9 @@
           "entries": [
             {
               "title": "Diffraction Across Colliders",
-              "date": "2026-06-17",
-              "date_range": "2026",
-              "detail": "TASI - Exploring Fundamental Physics from Colliders to the Cosmos",
-              "authors": "",
-              "arxiv": "",
-              "url": ""
-            },
-            {
-              "title": "Diffraction Across Colliders",
               "date": "2026-03-01",
               "date_range": "2026",
               "detail": "SCET 2026",
-              "authors": "",
-              "arxiv": "",
-              "url": ""
-            },
-            {
-              "title": "Diffraction at the LHC",
-              "date": "2026-01-21",
-              "date_range": "2026",
-              "detail": "GGI School on Theory of Fundamental Interactions",
               "authors": "",
               "arxiv": "",
               "url": ""
@@ -161,21 +143,33 @@
               "url": ""
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "Internal seminars",
-      "kind": "entries",
-      "groups": [
+        },
         {
-          "label": null,
+          "label": "Other Talks",
           "entries": [
+            {
+              "title": "Diffraction Across Colliders",
+              "date": "2026-06-17",
+              "date_range": "2026",
+              "detail": "TASI - Exploring Fundamental Physics from Colliders to the Cosmos",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            },
             {
               "title": "Diffraction across Colliders",
               "date": "2026-02-01",
               "date_range": "2026",
               "detail": "MIT Graduate Student Seminar",
+              "authors": "",
+              "arxiv": "",
+              "url": ""
+            },
+            {
+              "title": "Diffraction at the LHC",
+              "date": "2026-01-21",
+              "date_range": "2026",
+              "detail": "GGI School on Theory of Fundamental Interactions",
               "authors": "",
               "arxiv": "",
               "url": ""
