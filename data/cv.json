@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-05T18:00:16Z",
+  "generated": "2026-09-05T18:05:35Z",
   "source": "Notion CV databases 1-9",
   "person": {
     "name": "Philipp Benjamin Aretz",
@@ -915,7 +915,7 @@
       "source": "service",
       "filter": null,
       "group_by": "none",
-      "sort": "rank",
+      "sort": "date desc",
       "partial": "partials/service",
       "heading_style": "section",
       "show_if_empty": false,
