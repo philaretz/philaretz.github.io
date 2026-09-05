@@ -260,6 +260,16 @@ def group_entries(entries: list[dict], how: str | None) -> list[dict]:
             out.append({"label": "Posters", "entries": posters})
         return out
 
+    if how == "contributed_or_other":
+        contributed = [e for e in entries if e.get("kind") == "Contributed talk"]
+        other = [e for e in entries if e.get("kind") != "Contributed talk"]
+        out = []
+        if contributed:
+            out.append({"label": "Conference Talks", "entries": contributed})
+        if other:
+            out.append({"label": "Other Talks", "entries": other})
+        return out
+
     keyfn = {"year": lambda e: year(e.get("date"))}[how]
     buckets: dict[str, list] = {}
     for e in entries:
