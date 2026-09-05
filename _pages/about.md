@@ -15,7 +15,6 @@ redirect_from:
     <p class="bio">I am Philipp Aretz, a PhD student in theoretical high-energy physics at MIT. My research combines effective field theory, precision QCD, and heavy-ion physics to better understand how fundamental interactions emerge in high-energy collisions.</p>
     <p class="interests">Effective field theory &middot; Precision QCD &middot; Heavy-ion collisions</p>
     <div class="link-row">
-      <a href="mailto:{{ site.author.email }}">Email</a><span class="dot">&middot;</span>
       {% if site.author.arxiv %}<a href="{{ site.author.arxiv }}">arXiv</a><span class="dot">&middot;</span>{% endif %}
       {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}">Google Scholar</a><span class="dot">&middot;</span>{% endif %}
       {% if site.author.orcid %}<a href="{{ site.author.orcid }}">ORCID</a><span class="dot">&middot;</span>{% endif %}

@@ -11,7 +11,7 @@ layout: bespoke
 
 <p class="contact-lead">I welcome messages about research, collaborations, and academic opportunities — including a short context note helps me respond quickly.</p>
 
-<a href="mailto:{{ site.author.email }}" class="contact-email">{{ site.author.email }}</a>
+<a href="mailto:{{ site.data.contact.email_obfuscated }}" class="contact-email">{{ site.data.contact.email_obfuscated }}</a>
 <p class="contact-affil">{{ site.author.employer }} Center for Theoretical Physics<br>Office: <a href="http://whereis.mit.edu/?go=6-413">MIT, Room 6-413</a><br>{{ site.author.location }}</p>
 
 <h2 class="section-label">Elsewhere</h2>

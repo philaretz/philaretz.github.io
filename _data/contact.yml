@@ -1,0 +1,7 @@
+# Email address, HTML-entity-encoded character by character (decodes to
+# aretz24@mit.edu in a browser) so it never appears as scrapable plain
+# text anywhere in the published HTML — display text or mailto: href.
+# Keep this as the one place the address is spelled out in any form;
+# every page should reference site.data.contact.email_obfuscated rather
+# than site.author.email.
+email_obfuscated: "&#97;&#114;&#101;&#116;&#122;&#50;&#52;&#64;&#109;&#105;&#116;&#46;&#101;&#100;&#117;"
