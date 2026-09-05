@@ -1,7 +1,19 @@
-# Email address, HTML-entity-encoded character by character (decodes to
-# aretz24@mit.edu in a browser) so it never appears as scrapable plain
-# text anywhere in the published HTML — display text or mailto: href.
-# Keep this as the one place the address is spelled out in any form;
-# every page should reference site.data.contact.email_obfuscated rather
-# than site.author.email.
+# Email address, HTML-entity-encoded character by character so it never
+# appears as scrapable plain text anywhere in the published HTML —
+# display text or mailto: href. Keep this as the one place the address
+# is spelled out in any form; every page should reference these values
+# rather than site.author.email.
+#
+# email_obfuscated: use inside a raw HTML attribute (a mailto: href) or
+#   in a plain .html include — Jekyll/Liquid never decodes it, so the
+#   single-escaped entities reach the browser untouched.
+# email_obfuscated_mdtext: use as visible text inside a .md page's body.
+#   Kramdown (the Markdown -> HTML converter) decodes one layer of HTML
+#   entities in text nodes as it renders — feeding it the plain
+#   single-escaped form would defeat the whole point by turning back
+#   into literal "aretz24@mit.edu" in the shipped HTML. Doubling the
+#   "&" to "&amp;" here means Kramdown's decode of "&amp;" -> "&" is the
+#   only thing that happens, leaving a real "&#97;..." entity in the
+#   final output for the browser to decode instead.
 email_obfuscated: "&#97;&#114;&#101;&#116;&#122;&#50;&#52;&#64;&#109;&#105;&#116;&#46;&#101;&#100;&#117;"
+email_obfuscated_mdtext: "&amp;#97;&amp;#114;&amp;#101;&amp;#116;&amp;#122;&amp;#50;&amp;#52;&amp;#64;&amp;#109;&amp;#105;&amp;#116;&amp;#46;&amp;#101;&amp;#100;&amp;#117;"
