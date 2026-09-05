@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T13:11:24Z",
+  "generated": "2026-09-05T17:33:54Z",
   "source": "Notion CV databases 1-9",
   "person": {
     "name": "Philipp Benjamin Aretz",
@@ -134,7 +134,7 @@
       "title": "Diffraction Across Colliders",
       "slug": "diffraction-across-colliders",
       "event": "TASI - Exploring Fundamental Physics from Colliders to the Cosmos",
-      "kind": "Contributed talk",
+      "kind": "Outreach",
       "scope": "National",
       "institution": "University of Boulder",
       "location": "Boulder",
@@ -145,7 +145,7 @@
       "rank": null,
       "flags": {
         "cv": true,
-        "resume": true,
+        "resume": false,
         "web": true
       }
     },
@@ -184,7 +184,7 @@
       "abstract": "General Introduction to Diffraction aimed at other Graduate Students",
       "rank": null,
       "flags": {
-        "cv": true,
+        "cv": false,
         "resume": false,
         "web": true
       }
@@ -224,7 +224,7 @@
       "abstract": "General Introduction to EFT methods used in collider Physics",
       "rank": null,
       "flags": {
-        "cv": true,
+        "cv": false,
         "resume": false,
         "web": true
       }
@@ -244,7 +244,7 @@
       "abstract": "",
       "rank": null,
       "flags": {
-        "cv": true,
+        "cv": false,
         "resume": false,
         "web": true
       }
@@ -264,7 +264,7 @@
       "abstract": "",
       "rank": null,
       "flags": {
-        "cv": true,
+        "cv": false,
         "resume": false,
         "web": true
       }
@@ -284,7 +284,7 @@
       "abstract": "",
       "rank": null,
       "flags": {
-        "cv": true,
+        "cv": false,
         "resume": false,
         "web": true
       }
@@ -357,15 +357,15 @@
       "rank": 40,
       "flags": {
         "cv": true,
-        "resume": false,
-        "web": false
+        "resume": true,
+        "web": true
       },
       "institution": "Goethe-Schule Bochum",
       "degree": "Abitur",
       "field": null,
       "start": null,
       "end": "2020-06-30",
-      "grade": "1.0",
+      "grade": "1.0 (best possible)",
       "thesis": null,
       "advisor": null,
       "location": "Bochum, Germany",

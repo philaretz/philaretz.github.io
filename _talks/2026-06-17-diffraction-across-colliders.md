@@ -1,7 +1,7 @@
 ---
 title: "Diffraction Across Colliders"
 collection: talks
-type: "Contributed talk"
+type: "Outreach"
 scope: "National"
 permalink: /talks/2026-06-17-diffraction-across-colliders
 venue: "TASI - Exploring Fundamental Physics from Colliders to the Cosmos"
