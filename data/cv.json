@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-05T17:33:54Z",
+  "generated": "2026-09-05T17:43:42Z",
   "source": "Notion CV databases 1-9",
   "person": {
     "name": "Philipp Benjamin Aretz",
@@ -819,7 +819,21 @@
       "title": "Talks",
       "targets": [
         "cv",
-        "resume",
+        "resume"
+      ],
+      "order": 60,
+      "source": "talks",
+      "filter": "kind not in (\"Invited seminar\", \"Plenary\")",
+      "group_by": "contributed_or_other",
+      "sort": "date desc",
+      "partial": "partials/talk",
+      "heading_style": "section",
+      "show_if_empty": false,
+      "body": null
+    },
+    {
+      "title": "Talks",
+      "targets": [
         "web"
       ],
       "order": 60,
@@ -835,7 +849,6 @@
     {
       "title": "Internal seminars",
       "targets": [
-        "cv",
         "web"
       ],
       "order": 70,
