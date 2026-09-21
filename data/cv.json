@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-05T18:05:35Z",
+  "generated": "2026-09-21T14:59:53Z",
   "source": "Notion CV databases 1-9",
   "person": {
     "name": "Philipp Benjamin Aretz",
@@ -397,7 +397,7 @@
       "rank": 20,
       "flags": {
         "cv": true,
-        "resume": false,
+        "resume": true,
         "web": false
       },
       "role": "Tutor",
@@ -415,7 +415,7 @@
       "rank": 30,
       "flags": {
         "cv": false,
-        "resume": false,
+        "resume": true,
         "web": false
       },
       "role": "Financial Consulting Intern",
@@ -484,6 +484,19 @@
       "kind": "Scholarship",
       "year": 2023,
       "date": "2023-01-01"
+    },
+    {
+      "key": "name-3dd369dd",
+      "title": "Dean’s Fellowship",
+      "rank": null,
+      "flags": {
+        "cv": false,
+        "resume": false,
+        "web": false
+      },
+      "awarding_body": "MIT",
+      "kind": "Fellowship",
+      "year": null
     },
     {
       "key": "name-3c4369dd",
